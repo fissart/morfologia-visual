@@ -13,8 +13,8 @@ pre code {
   white-space: inherit;
 }
 
-.book-summary,
-.book-header,
+.book-summary ,
+.book .book-header.fixed ,
 .book .book-body .navigation {
  display:none;
 }
