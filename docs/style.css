@@ -12,3 +12,10 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+.book-summary,
+.book-header,
+.book .book-body .navigation {
+ display:none;
+}
+
