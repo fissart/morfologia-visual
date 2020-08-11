@@ -31,6 +31,6 @@ background:rgb(10,100,100);
     position: initial;
 }
 .book .book-body .page-wrapper .page-inner {
-    max-width: 95%;
+    max-width: 100%;
     padding: 10px;
 }
