@@ -41,6 +41,6 @@ description: ""
 # Resumen {-}
 
 Este es un libro sobre la geometria vectorial
-
+edicion 2
 
 # Introducción{-}
