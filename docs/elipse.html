@@ -24,7 +24,7 @@
 <meta name="author" content="Ricardo Michel MALLQUI BAÑOS" />
 
 
-<meta name="date" content="2020-08-11" />
+<meta name="date" content="2021-04-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -73,7 +73,9 @@
 <li class="chapter" data-level="3" data-path="lugar-geométrico.html"><a href="lugar-geométrico.html"><i class="fa fa-check"></i><b>3</b> Lugar geométrico</a></li>
 <li class="chapter" data-level="4" data-path="circunferencia.html"><a href="circunferencia.html"><i class="fa fa-check"></i><b>4</b> Circunferencia</a></li>
 <li class="chapter" data-level="5" data-path="parábola.html"><a href="parábola.html"><i class="fa fa-check"></i><b>5</b> Parábola</a></li>
-<li class="chapter" data-level="6" data-path="elipse.html"><a href="elipse.html"><i class="fa fa-check"></i><b>6</b> Elipse</a></li>
+<li class="chapter" data-level="6" data-path="elipse.html"><a href="elipse.html"><i class="fa fa-check"></i><b>6</b> Elipse</a><ul>
+<li class="chapter" data-level="6.1" data-path="elipse.html"><a href="elipse.html#preliminares"><i class="fa fa-check"></i><b>6.1</b> Preliminares</a></li>
+</ul></li>
 <li class="chapter" data-level="7" data-path="hipérbola.html"><a href="hipérbola.html"><i class="fa fa-check"></i><b>7</b> Hipérbola</a></li>
 <li class="appendix"><span><b>Apendice</b></span></li>
 <li class="chapter" data-level="A" data-path="ecuaciones-de-primer-grado.html"><a href="ecuaciones-de-primer-grado.html"><i class="fa fa-check"></i><b>A</b> Ecuaciones de primer grado</a><ul>
@@ -105,6 +107,13 @@
             <section class="normal" id="section-">
 <div id="elipse" class="section level1">
 <h1><span class="header-section-number">Capítulo 6</span> Elipse</h1>
+<div id="preliminares" class="section level2">
+<h2><span class="header-section-number">6.1</span> Preliminares</h2>
+
+<div class="example">
+<span id="exm:unnamed-chunk-8" class="example"><strong>Ejemplo 6.1  </strong></span>wwwwwwwww
+</div>
+
 Dados dos puntos distintos <span class="math inline">\(F_1\)</span> y <span class="math inline">\(F_2\)</span> llamados focos; la elipse <span class="math inline">\(\mathcal{E}\)</span> es el conjunto formado por los puntos <span class="math inline">\(P\)</span> que satisfacen la ecuacion
 <span class="math display" id="eq:binom">\[\begin{equation} 
 \left|P-F_1\right|+\left|P-F_2\right|=2a
@@ -125,7 +134,7 @@ Figura 6.1: Elipse
 <span class="math inline">\(d\left[B_i;F_1\right]=d\left[B_i;F_2\right]= a\)</span> y <span class="math inline">\(d\left[V_i;C\right]=d\left[V_i;C\right]=a\)</span>, <span class="math inline">\(i=1,2\)</span>.</p>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-8" class="theorem"><strong>Teorema 6.1  </strong></span>En la elipse se verifican las siguientes igualdades</p>
+<p><span id="thm:unnamed-chunk-9" class="theorem"><strong>Teorema 6.1  </strong></span>En la elipse se verifican las siguientes igualdades</p>
 <ol style="list-style-type: decimal">
 <li><p><span class="math inline">\(d\left[B_1;F_i\right]=d\left[B_2;F_i\right]=a\)</span></p></li>
 <li><p><span class="math inline">\(d\left[V_1;C\right]=d\left[V_2;C\right]=a\)</span></p></li>
@@ -174,13 +183,13 @@ Por lo tanto
 <p>Cuando el eje es paralelo al eje <span class="math inline">\(y\)</span>; <span class="math inline">\(\vec{u}=j=(0,1)\)</span> entonces <span class="math inline">\((x,y)=V+x&#39;\vec{u}+y&#39;\vec{u}^\perp=(h-y&#39;,k+x&#39;)\implies x&#39;=y-k\)</span> y <span class="math inline">\(y&#39;=h-x\)</span> en <span class="math inline">\(\frac{x&#39;^2}{a^2}+\frac{y&#39;^2}{b^2}=1\)</span> resulta <span class="math inline">\(\frac{(y-k)^2}{a^2}+\frac{(y-k)^2}{b^2}=1\)</span> (<span class="math inline">\(\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\)</span> si <span class="math inline">\(V\)</span> está en el origen); entonces <span class="math inline">\(F_1=C+c\vec{u}=(h+c,k)\)</span>; <span class="math inline">\(\mathcal{L}_1: x=k+\frac{a}{e}\)</span> y <span class="math inline">\(\mathcal{L}_2: x=k-\frac{a}{e}\)</span>.</p>
 
 <div class="corollary">
-<span id="cor:unnamed-chunk-10" class="corollary"><strong>Corolario 6.1  </strong></span>The characteristic function of the sum of two independent random variables <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> is the product of characteristic functions of <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span>, i.e.,
+<span id="cor:unnamed-chunk-11" class="corollary"><strong>Corolario 6.1  </strong></span>The characteristic function of the sum of two independent random variables <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> is the product of characteristic functions of <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span>, i.e.,
 <span class="math display">\[\varphi _{X_1+X_2}(t)=\varphi _{X_1}(t) \varphi _{X_2}(t)\]</span>
 </div>
 
 
 <div class="exercise">
-<span id="exr:unnamed-chunk-11" class="exercise"><strong>Ejercicio 6.1  (Characteristic Function of the Sample Mean)  </strong></span>Let <span class="math inline">\(\bar{X}=\sum_{i=1}^n \frac{1}{n} X_i\)</span> be the sample mean of <span class="math inline">\(n\)</span> independent and identically distributed random variables, each with characteristic function <span class="math inline">\(\varphi_{X}.\)</span> Compute the characteristic function of <span class="math inline">\(\bar{X}\)</span>.
+<span id="exr:unnamed-chunk-12" class="exercise"><strong>Ejercicio 6.1  (Characteristic Function of the Sample Mean)  </strong></span>Let <span class="math inline">\(\bar{X}=\sum_{i=1}^n \frac{1}{n} X_i\)</span> be the sample mean of <span class="math inline">\(n\)</span> independent and identically distributed random variables, each with characteristic function <span class="math inline">\(\varphi_{X}.\)</span> Compute the characteristic function of <span class="math inline">\(\bar{X}\)</span>.
 </div>
 
 
@@ -190,6 +199,7 @@ Por lo tanto
 </div>
 
 
+</div>
 </div>
             </section>
 
@@ -223,7 +233,7 @@ gitbook.start({
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
-"theme": "white",
+"theme": "sepia",
 "family": "serif",
 "size": 2
 },
