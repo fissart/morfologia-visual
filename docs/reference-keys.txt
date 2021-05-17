@@ -15,7 +15,7 @@ thm:unnamed-chunk-9
 cor:unnamed-chunk-11
 exr:unnamed-chunk-12
 fig:hiperbola
-vectores
+vectores-wwwwwwwwwwwwww
 intro
 lugar-geométrico
 circunferencia
