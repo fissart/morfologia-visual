@@ -1,5 +1,57 @@
-\mainmatter 
+\mainmatter
 
-# Vectores wwwwwwwwwwwwww
-# Rectas {#intro}
+# Formas bidimesionales
 
+En este capítulo se describirán definiciones y conceptos sobre las formas básicas que existen el espacio bidimensional $\mathbb{R}$ tales como el punto, la linea, los polígonos, las formas orgánicas y los fractales bidimensionales
+
+## El punto y la linea
+
+```{definition, r2, name="Espacio bidimesional"}
+El espacio bidimensional es un conjunto de puntos  es un ente grafico, considerada como la mínima unidad en la representacion o el diseño.
+```
+
+```{definition, punto, name="El punto"}
+El punto es un ente grafico, considerada como la mínima unidad en la representacion o el diseño.
+```
+
+La ubicación de un punto se realiza con la ayuda de un sistema de ejes coordenados refiérase a la Definición \@ref(def:r2) compuestas de dos ejes el eje $x$ (eje de las abscisas) y el eje $y$ (eje de las ordenadas), ademas de una etiqueta de ser necesaria, es decir el punto $W=(x,y)$ indica que esta ubicada a $x$ unidades sobre el eje $x$, del centro del sistema de ejes coordenados, a la derecha si $x$ es positivo y a la izquierda si $x$ es negativo; y $y$ unidades sobre el eje $y$, del centro del sistema de ejes coordenados, a la arriba si $x$ es positivo y a la abajo si $x$ es negativo.
+
+```{definition, linea, name="La linea"}
+La linea considerada como el conjunto de puntos distribuidas de manera secuencial es decir yuxtapuestas.
+```
+
+## Polígonales
+
+## Curvas cerradas
+
+### La circunferencia
+
+```{definition, circulo, name="La circunferencia"}
+Es la curva geenrada por los puntos que equidistan de un punto llamado centro de la cirunferencia
+```
+
+### La elipse
+
+### Trasformación de la elipse
+
+## Lugares geométricos
+
+### Las cónicas
+
+### Otros...
+
+## Fractales bidimesionales
+
+### Fractales clásicos
+
+```{definition, sierpinski, name="Triangulos de Sierpinski"}
+wwwwwwwwwwwwwwwwwwwwwwwwwww
+```
+
+```{definition, kosh, name="Copo de nieve de Kosh"}
+wwwwwwwwwwwwwwwwwwwwwwwwwww
+```
+
+```{definition, arbol, name="Arbol fractal"}
+wwwwwwwwwwwwwwwwwwwwwwwwwww
+```

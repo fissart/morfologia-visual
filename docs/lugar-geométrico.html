@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Capítulo 3 Lugar geométrico | Geometria-vectorial</title>
-  <meta name="description" content="Capítulo 3 Lugar geométrico | Geometria-vectorial" />
+  <title>Capítulo 2 Lugar geométrico | Morfología visual</title>
+  <meta name="description" content="Capítulo 2 Lugar geométrico | Morfología visual" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Capítulo 3 Lugar geométrico | Geometria-vectorial" />
+  <meta property="og:title" content="Capítulo 2 Lugar geométrico | Morfología visual" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Capítulo 3 Lugar geométrico | Geometria-vectorial" />
+  <meta name="twitter:title" content="Capítulo 2 Lugar geométrico | Morfología visual" />
   
   
   
@@ -24,15 +24,16 @@
 <meta name="author" content="Ricardo Michel MALLQUI BAÑOS" />
 
 
-<meta name="date" content="2021-05-16" />
+<meta name="date" content="2021-05-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="intro.html"/>
+<link rel="prev" href="formas-bidimesionales.html"/>
 <link rel="next" href="circunferencia.html"/>
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,12 +51,33 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -72,21 +94,55 @@
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Resumen</a></li>
 <li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html"><i class="fa fa-check"></i>Introducción</a></li>
-<li class="chapter" data-level="1" data-path="vectores-wwwwwwwwwwwwww.html"><a href="vectores-wwwwwwwwwwwwww.html"><i class="fa fa-check"></i><b>1</b> Vectores wwwwwwwwwwwwww</a></li>
-<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Rectas</a></li>
-<li class="chapter" data-level="3" data-path="lugar-geométrico.html"><a href="lugar-geométrico.html"><i class="fa fa-check"></i><b>3</b> Lugar geométrico</a></li>
-<li class="chapter" data-level="4" data-path="circunferencia.html"><a href="circunferencia.html"><i class="fa fa-check"></i><b>4</b> Circunferencia</a></li>
-<li class="chapter" data-level="5" data-path="parábola.html"><a href="parábola.html"><i class="fa fa-check"></i><b>5</b> Parábola</a></li>
-<li class="chapter" data-level="6" data-path="elipse.html"><a href="elipse.html"><i class="fa fa-check"></i><b>6</b> Elipse</a><ul>
-<li class="chapter" data-level="6.1" data-path="elipse.html"><a href="elipse.html#preliminares"><i class="fa fa-check"></i><b>6.1</b> Preliminares</a></li>
+<li class="chapter" data-level="1" data-path="formas-bidimesionales.html"><a href="formas-bidimesionales.html"><i class="fa fa-check"></i><b>1</b> Formas bidimesionales</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="formas-bidimesionales.html"><a href="formas-bidimesionales.html#el-punto-y-la-linea"><i class="fa fa-check"></i><b>1.1</b> El punto y la linea</a></li>
+<li class="chapter" data-level="1.2" data-path="formas-bidimesionales.html"><a href="formas-bidimesionales.html#polígonales"><i class="fa fa-check"></i><b>1.2</b> Polígonales</a></li>
+<li class="chapter" data-level="1.3" data-path="formas-bidimesionales.html"><a href="formas-bidimesionales.html#curvas-cerradas"><i class="fa fa-check"></i><b>1.3</b> Curvas cerradas</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="formas-bidimesionales.html"><a href="formas-bidimesionales.html#la-circunferencia"><i class="fa fa-check"></i><b>1.3.1</b> La circunferencia</a></li>
+<li class="chapter" data-level="1.3.2" data-path="formas-bidimesionales.html"><a href="formas-bidimesionales.html#la-elipse"><i class="fa fa-check"></i><b>1.3.2</b> La elipse</a></li>
+<li class="chapter" data-level="1.3.3" data-path="formas-bidimesionales.html"><a href="formas-bidimesionales.html#trasformación-de-la-elipse"><i class="fa fa-check"></i><b>1.3.3</b> Trasformación de la elipse</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="hipérbola.html"><a href="hipérbola.html"><i class="fa fa-check"></i><b>7</b> Hipérbola</a></li>
+<li class="chapter" data-level="1.4" data-path="formas-bidimesionales.html"><a href="formas-bidimesionales.html#lugares-geométricos"><i class="fa fa-check"></i><b>1.4</b> Lugares geométricos</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="formas-bidimesionales.html"><a href="formas-bidimesionales.html#las-cónicas"><i class="fa fa-check"></i><b>1.4.1</b> Las cónicas</a></li>
+<li class="chapter" data-level="1.4.2" data-path="formas-bidimesionales.html"><a href="formas-bidimesionales.html#otros"><i class="fa fa-check"></i><b>1.4.2</b> Otros…</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="formas-bidimesionales.html"><a href="formas-bidimesionales.html#fractales-bidimesionales"><i class="fa fa-check"></i><b>1.5</b> Fractales bidimesionales</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="formas-bidimesionales.html"><a href="formas-bidimesionales.html#fractales-clásicos"><i class="fa fa-check"></i><b>1.5.1</b> Fractales clásicos</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="lugar-geométrico.html"><a href="lugar-geométrico.html"><i class="fa fa-check"></i><b>2</b> Lugar geométrico</a></li>
+<li class="chapter" data-level="3" data-path="circunferencia.html"><a href="circunferencia.html"><i class="fa fa-check"></i><b>3</b> Circunferencia</a></li>
+<li class="chapter" data-level="4" data-path="parábola.html"><a href="parábola.html"><i class="fa fa-check"></i><b>4</b> Parábola</a></li>
+<li class="chapter" data-level="5" data-path="elipse.html"><a href="elipse.html"><i class="fa fa-check"></i><b>5</b> Elipse</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="elipse.html"><a href="elipse.html#preliminaresww"><i class="fa fa-check"></i><b>5.1</b> Preliminaresww</a></li>
+<li class="chapter" data-level="5.2" data-path="elipse.html"><a href="elipse.html#example"><i class="fa fa-check"></i><b>5.2</b> Example</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="hipérbola.html"><a href="hipérbola.html"><i class="fa fa-check"></i><b>6</b> Hipérbola</a></li>
 <li class="appendix"><span><b>Apendice</b></span></li>
-<li class="chapter" data-level="A" data-path="ecuaciones-de-primer-grado.html"><a href="ecuaciones-de-primer-grado.html"><i class="fa fa-check"></i><b>A</b> Ecuaciones de primer grado</a><ul>
-<li class="chapter" data-level="A.1" data-path="ecuaciones-de-primer-grado.html"><a href="ecuaciones-de-primer-grado.html#raices-de-una-ecuacion-de-segundo-grado"><i class="fa fa-check"></i><b>A.1</b> Raices de una ecuacion de segundo grado</a></li>
-<li class="chapter" data-level="A.2" data-path="ecuaciones-de-primer-grado.html"><a href="ecuaciones-de-primer-grado.html#propiedades-de-una-ecuacion-de-segundo-grado"><i class="fa fa-check"></i><b>A.2</b> Propiedades de una ecuacion de segundo grado</a></li>
+<li class="chapter" data-level="A" data-path="trasformaciones.html"><a href="trasformaciones.html"><i class="fa fa-check"></i><b>A</b> Trasformaciones</a>
+<ul>
+<li class="chapter" data-level="A.1" data-path="trasformaciones.html"><a href="trasformaciones.html#trasformaciones-elementales"><i class="fa fa-check"></i><b>A.1</b> Trasformaciones elementales</a>
+<ul>
+<li class="chapter" data-level="A.1.1" data-path="trasformaciones.html"><a href="trasformaciones.html#traslacion"><i class="fa fa-check"></i><b>A.1.1</b> Traslacion</a></li>
+<li class="chapter" data-level="A.1.2" data-path="trasformaciones.html"><a href="trasformaciones.html#rotacion"><i class="fa fa-check"></i><b>A.1.2</b> Rotacion</a></li>
+<li class="chapter" data-level="A.1.3" data-path="trasformaciones.html"><a href="trasformaciones.html#reflexión"><i class="fa fa-check"></i><b>A.1.3</b> Reflexión</a></li>
+<li class="chapter" data-level="A.1.4" data-path="trasformaciones.html"><a href="trasformaciones.html#homotescia"><i class="fa fa-check"></i><b>A.1.4</b> Homotescia</a></li>
 </ul></li>
-<li class="chapter" data-level="B" data-path="ecacuaciones-lineales-de-primer-grado.html"><a href="ecacuaciones-lineales-de-primer-grado.html"><i class="fa fa-check"></i><b>B</b> Ecacuaciones lineales de primer grado</a><ul>
+<li class="chapter" data-level="A.2" data-path="trasformaciones.html"><a href="trasformaciones.html#trasformaciones-secundarias"><i class="fa fa-check"></i><b>A.2</b> Trasformaciones secundarias</a>
+<ul>
+<li class="chapter" data-level="A.2.1" data-path="trasformaciones.html"><a href="trasformaciones.html#homeomofismo"><i class="fa fa-check"></i><b>A.2.1</b> Homeomofismo</a></li>
+<li class="chapter" data-level="A.2.2" data-path="trasformaciones.html"><a href="trasformaciones.html#homomorfismo"><i class="fa fa-check"></i><b>A.2.2</b> Homomorfismo</a></li>
+</ul></li>
+<li class="chapter" data-level="A.3" data-path="trasformaciones.html"><a href="trasformaciones.html#numeros-complejos"><i class="fa fa-check"></i><b>A.3</b> Numeros complejos</a></li>
+<li class="chapter" data-level="A.4" data-path="trasformaciones.html"><a href="trasformaciones.html#propiedades-de-una-ecuacion-de-segundo-grado"><i class="fa fa-check"></i><b>A.4</b> Propiedades de una ecuacion de segundo grado</a></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="ecacuaciones-lineales-de-primer-grado.html"><a href="ecacuaciones-lineales-de-primer-grado.html"><i class="fa fa-check"></i><b>B</b> Ecacuaciones lineales de primer grado</a>
+<ul>
 <li class="chapter" data-level="B.1" data-path="ecacuaciones-lineales-de-primer-grado.html"><a href="ecacuaciones-lineales-de-primer-grado.html#soluciones-de-ecuacuiones-lineales-de-primer-grado"><i class="fa fa-check"></i><b>B.1</b> Soluciones de ecuacuiones lineales de primer grado</a></li>
 <li class="chapter" data-level="B.2" data-path="ecacuaciones-lineales-de-primer-grado.html"><a href="ecacuaciones-lineales-de-primer-grado.html#soluciones"><i class="fa fa-check"></i><b>B.2</b> Soluciones …</a></li>
 <li class="chapter" data-level="B.3" data-path="ecacuaciones-lineales-de-primer-grado.html"><a href="ecacuaciones-lineales-de-primer-grado.html#forma-matricial-de-una-ecuación-lineal"><i class="fa fa-check"></i><b>B.3</b> Forma matricial de una ecuación lineal</a></li>
@@ -101,7 +157,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Geometria-vectorial</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Morfología visual</a>
           </h1>
         </div>
 
@@ -109,8 +165,8 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="lugar-geométrico" class="section level1">
-<h1><span class="header-section-number">Capítulo 3</span> Lugar geométrico</h1>
+<div id="lugar-geométrico" class="section level1" number="2">
+<h1><span class="header-section-number">Capítulo 2</span> Lugar geométrico</h1>
 <p>Here is a review of existing methods.</p>
 
 </div>
@@ -119,7 +175,7 @@
           </div>
         </div>
       </div>
-<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="formas-bidimesionales.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="circunferencia.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>

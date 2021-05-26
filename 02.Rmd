@@ -1,3 +1,27 @@
-# Lugar geométrico
+# Formas tridimesionales
 
-Here is a review of existing methods.
+wwwwwwwwwwwwwwwwwwwwwwwwwwl plano Here is a review of existing methods.
+
+## Superficies poliedricas
+
+www
+
+### Solidos platónicos
+
+### Los prismas
+
+## Superficies de revolucion y regladas
+
+## Superficies curvas
+
+### Cerradas
+
+Esfera Elipsoide
+
+### Abiertas
+
+### Orientables
+
+### No orientables
+
+## Fractales 3D

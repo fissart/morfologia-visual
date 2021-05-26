@@ -4,10 +4,10 @@
 \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
 %
 \documentclass[
-  10pt,
+  16pt,
 ]{krantz}
+\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
@@ -39,7 +39,7 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-  pdftitle={Geometria-vectorial},
+  pdftitle={Morfología visual},
   pdfauthor={Ricardo Michel MALLQUI BAÑOS},
   colorlinks=true,
   linkcolor=Maroon,
@@ -48,7 +48,48 @@
   urlcolor=Blue,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{longtable,booktabs}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -107,12 +148,16 @@
 \flushbottom 
 
 \frontmatter
+
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
-\title{Geometria-vectorial}
+\title{Morfología visual}
 \author{Ricardo Michel MALLQUI BAÑOS}
-\date{2021-05-16}
+\date{2021-05-25}
 
 \usepackage{amsthm}
 \newtheorem{theorem}{Teorema}[chapter]
@@ -176,193 +221,293 @@
 \chapter*{Resumen}\label{resumen}}
 
 
-Este es un libro sobre la geometria vectorial
-edicion 2
+La importancia del estudio de la forma en el arte plástico es explicita debido a la manipulación de estas en el espacio bidimensional y tridimensional, en el plano bidimensional se estudian aspectos geometricos partiendo desde la forma de un punto hasta formas orgánicas con comportamientos similares al de los conjuntos fractales de Mandelbrot y Julia y en el espacio tridimensional se realizara un estudio sobre formas que viven en este espacio es decir tanto las formas bidimensionales además de los sólidos geométricos y formas organicas como las superficies organicas como los conjuntos de Mandelbrots 3D y julia 3D. Finalmente se realiza composiciones con estas formas, utilizando principios compositivos con el objetivo de reunir los conocimientos previos y reconocer la utilidad de su estudio previo. Luego se reconocerán estas formas como contenedores de formas existentes en la naturaleza tales como la fitomorfología, la zoomorfología, la geomorfologia
 
 \hypertarget{introducciuxf3n}{%
 \chapter*{Introducción}\label{introducciuxf3n}}
 
 
+El estudio de la forma de manera aislada o compositiva, en el arte plástico es de importancia para la manipulación correcta de estas, generando y representación lógica; es decir desprovista de la intuición, la intuición, generalmente distorsiona el aspecto verdadero de las formas.
+
+El espacio bidimensional se denota con el símbolo \(\mathbb{R}^2\) y al espacio tridimensional se denota con el símbolo \(\mathbb{R}^3\). Las formas bidimensionales pueden existir tanto el el espacio bidimensional y tridimensional y Las formas tridimensionales unicamente pueden existir el el espacio tridimensional.
+
+Las formas que reunen todas las caracteristicas de las formas bidimnesionales y tridmensionales son los las formas llamadas fractales. que se generana bajo los procesos de iteración o recursividad de ciertas formas básicas llamadas módulos, exiten modelos secuenciales que indican la recursividad, la formas concernientes a los fractales generadas por los números complejos son las llamadas ocacionalmente conjuntos de Mandelbrot y Julia en el espacio bidimensional y el el espacio tridmencional suelen llamarse conjuntos de Mandelbrot 3D y Julia 3D, estas formas manifiestan una variedad infinita
+
+El libro se realiza bajo las teorias y conceptos de diversas áreas tales como la botánica la geometría descriptiva, modelos matemáticos, que proveen de conceptos y objetos utilizados hasta el momento de manera intuitiva en las artes plásticas es decir se interrrelaciona estos conocimientos con el objetivos de agruparlos y demostrar que este agrupamiento de manera lógica y secuencial, esta avalada evidentemente por las teorías y la intuición genuina.
+
+Las formas orgánicas son aquellas escapan a una geometría especifica ya estudiadas pero pueden ser estudiadas ajo criterios de geometrización es decir generando una red geométrica, esto es identificando los puntos sobre la forma que sirvan de anclaje o vertice, estos puntos pueden pertenecer o no la forma en el primer caso se debe considerar que sean puntos más resaltantes de la forma, en el sugundo caso deben ser punto de manera que generan segmentos tangentes a las formas.
+
+El libro se compone de cinco capítulos en los cuales se describen los temas de manera secuencial además de dos apéndices que sirven como reforzamiento de la ideas vertidas en el texto es decir en el primer capitulo se describe la teoría de la forma en el espacio bidimensional, en el capitulo 2 se describe la teoría de las formas tridimensionales, en el tercer capítulo concierne a la teoría de formas compositivas, el capítulo 4 formas orgánicas y su geometría, el capítulo 5 formas abstractas y su geometria
+
 \mainmatter
 
-\hypertarget{vectores-wwwwwwwwwwwwww}{%
-\chapter{Vectores wwwwwwwwwwwwww}\label{vectores-wwwwwwwwwwwwww}}
+\hypertarget{formas-bidimesionales}{%
+\chapter{Formas bidimesionales}\label{formas-bidimesionales}}
 
-\hypertarget{intro}{%
-\chapter{Rectas}\label{intro}}
+En este capítulo se describirán definiciones y conceptos sobre las formas básicas que existen el espacio bidimensional \(\mathbb{R}\) tales como el punto, la linea, los polígonos, las formas orgánicas y los fractales bidimensionales
 
-\hypertarget{lugar-geomuxe9trico}{%
-\chapter{Lugar geométrico}\label{lugar-geomuxe9trico}}
+\hypertarget{el-punto-y-la-linea}{%
+\section{El punto y la linea}\label{el-punto-y-la-linea}}
 
-Here is a review of existing methods.
+\begin{definition}[Espacio bidimesional]
+\protect\hypertarget{def:r2}{}{\label{def:r2} \iffalse (Espacio bidimesional) \fi{} }El espacio bidimensional es un conjunto de puntos es un ente grafico, considerada como la mínima unidad en la representacion o el diseño.
+\end{definition}
 
-\hypertarget{circunferencia}{%
-\chapter{Circunferencia}\label{circunferencia}}
+\begin{definition}[El punto]
+\protect\hypertarget{def:punto}{}{\label{def:punto} \iffalse (El punto) \fi{} }El punto es un ente grafico, considerada como la mínima unidad en la representacion o el diseño.
+\end{definition}
 
-Sea \(\vec{a}=(a_1,a_2)\) entonces el vector escalado es \(r\vec{a}\parallel\vec{a}\); el vector perpendicular a este es \(\vec{a}^\perp=(-a_2,a_1)\) la norma del vector \(\vec{a}\) es \(\left\|a\right\|=\sqrt{a_1^2+a_2^2}\) el vector unitario en la dirección de \(\vec{a}\) es \(\vec{\mu}=\frac{\vec{a}}{\left\|a\right\|}\) que es paralela a este. Dado dos puntos \(P_1\) y \(P_2\) estos definen un vector \(\vec{P_1P_2}=P_2-P_1\). Los vectores en dirección de los ejes positivos son \(i=(1,0)\) y \(j=(0,1)\); cualquier vector se pueden expresar en términos de estos es decir \(\vec{a}=(a_1,a_2)=a_1(1,0)+a_2(0,1)=a_1i+a_2j\). De acuerdo al ángulo de inclinación del vector se tiene la siguiente representación \(\vec{a}=\left\|\vec{a}\right\|(\cos\theta,\sin\theta)\). \(C\)
+La ubicación de un punto se realiza con la ayuda de un sistema de ejes coordenados refiérase a la Definición \ref{def:r2} compuestas de dos ejes el eje \(x\) (eje de las abscisas) y el eje \(y\) (eje de las ordenadas), ademas de una etiqueta de ser necesaria, es decir el punto \(W=(x,y)\) indica que esta ubicada a \(x\) unidades sobre el eje \(x\), del centro del sistema de ejes coordenados, a la derecha si \(x\) es positivo y a la izquierda si \(x\) es negativo; y \(y\) unidades sobre el eje \(y\), del centro del sistema de ejes coordenados, a la arriba si \(x\) es positivo y a la abajo si \(x\) es negativo.
 
-\begin{theorem}[russ]
-\protect\hypertarget{thm:www}{}{\label{thm:www} \iffalse (russ) \fi{} }Dada el espacio \(R\) y \(r\in R\) se tiene que \(\mathcal{R}(r)=\lim_{t\to\infty}g(y)_r\)
-\end{theorem}
-\(\sum\)
+\begin{definition}[La linea]
+\protect\hypertarget{def:linea}{}{\label{def:linea} \iffalse (La linea) \fi{} }La linea considerada como el conjunto de puntos distribuidas de manera secuencial es decir yuxtapuestas.
+\end{definition}
 
-\begin{figure}
+\hypertarget{poluxedgonales}{%
+\section{Polígonales}\label{poluxedgonales}}
 
-{\centering \includegraphics{circunferencia} 
+\hypertarget{curvas-cerradas}{%
+\section{Curvas cerradas}\label{curvas-cerradas}}
 
-}
+\hypertarget{la-circunferencia}{%
+\subsection{La circunferencia}\label{la-circunferencia}}
 
-\caption{Vector}\label{fig:C1}
-\end{figure}
+\begin{definition}[La circunferencia]
+\protect\hypertarget{def:circulo}{}{\label{def:circulo} \iffalse (La circunferencia) \fi{} }Es la curva geenrada por los puntos que equidistan de un punto llamado centro de la cirunferencia
+\end{definition}
 
-\begin{figure}
+\hypertarget{la-elipse}{%
+\subsection{La elipse}\label{la-elipse}}
 
-{\centering \includegraphics{vector} 
+\hypertarget{trasformaciuxf3n-de-la-elipse}{%
+\subsection{Trasformación de la elipse}\label{trasformaciuxf3n-de-la-elipse}}
 
-}
+\hypertarget{lugares-geomuxe9tricos}{%
+\section{Lugares geométricos}\label{lugares-geomuxe9tricos}}
 
-\caption{Circunferencia}\label{fig:C2}
-\end{figure}
+\hypertarget{las-cuxf3nicas}{%
+\subsection{Las cónicas}\label{las-cuxf3nicas}}
 
-Dos vectores son ortogonales (\(\vec{a}\perp\vec{b}\)) si \(\left|\vec{a}-\vec{b}\right|=\left|\vec{a}+\vec{b}\right|\) y verifican
+\hypertarget{otros}{%
+\subsection{Otros\ldots{}}\label{otros}}
 
-\(\left|\vec{b}\right|^2+\left|\vec{b}\right|^2+=\left|\vec{a}+\vec{b}\right|^2\)
-\(\vec{a}\vec{b}=0\)
-\(\vec{a}\parallel\vec{b}^\perp\)
-\(\vec{a}\) y \(\vec{b}\) son LI si y solo si \(r\vec{a}+s\vec{b}=0\) implica \(r=0\) y \(s=0\).
+\hypertarget{fractales-bidimesionales}{%
+\section{Fractales bidimesionales}\label{fractales-bidimesionales}}
 
-La proyeccion de \(\vec{a}\) sobre \(\vec{b}\) es otro vector \(\text{Proy}_{\vec{b}}\vec{a}\)
+\hypertarget{fractales-cluxe1sicos}{%
+\subsection{Fractales clásicos}\label{fractales-cluxe1sicos}}
 
-\(\vec{a}=\text{Proy}_{\vec{b}}\vec{a}+\text{Proy}_{\vec{b}^\perp}\vec{a}\) si hacemos \(\vec{a}=p\vec{b}+q\vec{b}^\perp\) entonces \(q=\frac{\vec{a}\vec{b}}{\left\|\vec{b}\right\|^2}\) y \(p=\frac{\vec{a}\vec{b}^\perp}{\left\|\vec{b}\right\|^2}\) pues \(\left\|\vec{b}\right\|=\left\|\vec{b}^\perp\right\|\) entonces \(\text{Proy}_{\vec{b}}\vec{a}=\frac{\vec{a}\vec{b}}{\left\|\vec{b}\right\|^2}\vec{b}=\frac{\vec{a}\vec{b}}{\left\|\vec{b}\right\|}\frac{\vec{b}}{\left\|\vec{b}\right\|}=\text{Cp}_{\vec{b}}\vec{a}\frac{\vec{b}}{\left\|\vec{b}\right\|}\); \(\text{Cp}_{\vec{b}}\vec{a}=\frac{\vec{a}\vec{b}}{\left\|\vec{b}\right\|}\) recibe el nombre de componente de \(\vec{a}\) en la dirección de \(\vec{b}\)
+\begin{definition}[Triangulos de Sierpinski]
+\protect\hypertarget{def:sierpinski}{}{\label{def:sierpinski} \iffalse (Triangulos de Sierpinski) \fi{} }wwwwwwwwwwwwwwwwwwwwwwwwwww
+\end{definition}
 
-Dado \(P_0\) y un vector \(\vec{a}\) entonces la recta se define como el conjunto de puntos \(\mathcal{L}=\left\{P\in\mathbb{R}^2/P=P_0+t\vec{a};\: t\in \mathbb{R}\right\}\) que recibe el nombre de ecuación vectorial de la recta. \(P\in\mathcal{L}\iff (P-P_0)\cdot\vec{a}^\perp=0\). De la ecuación vectorial de la recta se tiene si \(P=(x.y)\); \(P_0=(x_0,y_0)\) y \(\vec{a}=(a_1,a_2)\) se tiene la ecuación paramétrica de la recta. \(x=x_0+ta_1\); \(y=y_0+ta_2\) de esto se obtiene la ecuación simétrica de la recta \[\frac{x-x_0}{a_1}=\frac{y-y_0}{a_2}.\] Sea \(\vec{n}=(a,b)=\vec{a}^\perp\) entonces se tiene que si \(P\in \mathcal{L}\) entonces \((P-P_0)\cdot \vec{n}=0\) pues son perpendicualres; entonces \(P\cdot \vec{n}=P_0\cdot \vec{n}\iff ax+by=-c\implies ax+by+c=0\) que recibe el nombre de ecuación general de la recta. Sea \(Q=(x_1,y_1)\) un punto exterior a \(\mathcal{L}\) entonces la distancia de \(Q\) a \(\mathcal{L}\) se define como
+\begin{definition}[Copo de nieve de Kosh]
+\protect\hypertarget{def:kosh}{}{\label{def:kosh} \iffalse (Copo de nieve de Kosh) \fi{} }wwwwwwwwwwwwwwwwwwwwwwwwwww
+\end{definition}
 
-\begin{align*}d[Q;\mathcal{L}] & =\left|\text{Cp}_{\vec{n}}(Q-P_0)\right| \\
-& =\left|\frac{(Q-P_0)\cdot\vec{n}}{\left|\vec{n}\right|}\right| \\
-& =\left|\frac{Q\cdot\vec{n}-P_0\cdot\vec{n}}{\left|\vec{n}\right|}\right| \\
-& =\frac{\left|ax_1+by_1+c\right|}{\sqrt{a^2+b^2}}
-\end{align*}
+\begin{definition}[Arbol fractal]
+\protect\hypertarget{def:arbol}{}{\label{def:arbol} \iffalse (Arbol fractal) \fi{} }wwwwwwwwwwwwwwwwwwwwwwwwwww
+\end{definition}
 
-Sean \(\mathcal{L}_1\) y \(\mathcal{L}_2\) dos rectas; con vectores directores \(\vec{a}=(a_1,a_2)\) y \(\vec{b}=(b_1,b_2)\) respectivamente; entonces \(\mathcal{L}_1\cap\mathcal{L}_2=(d_1,d_2)\) donde \(d_1\) y \(d_2\) satisfacen el sistema generado por las ecuaciones generales de \(\mathcal{L}_1\) y \(\mathcal{L}_2\); \(a_1x+a_1y+k_1=0\) y \(b_1x+b_1y+k_2=0\).
+\hypertarget{formas-tridimesionales}{%
+\chapter{Formas tridimesionales}\label{formas-tridimesionales}}
 
-La pendiente de una recta se deduce de su vector director es decir si \(\vec{a}=(a_1,a_2)\) entonces \(m=\frac{a_2}{a_1}\); de esto se deduce \(\vec{a}=(a_1,a_2)=a_1(1,\frac{a_2}{a_1})=a_1(1,m)\). El angulo generado por las \(\mathcal{L}_1\) con pendiente \(m_1\) y \(\mathcal{L}_2\) con pendiente \(m_1\); está dada por \(\theta=\arctan\left(\frac{m_1-m_2}{1+m_1m_2}\right)\).
+wwwwwwwwwwwwwwwwwwwwwwwwwwl plano Here is a review of existing methods.
 
-El círculo se define como el conjunto de punto \(P=(x,y)\) que satisfacen la ecuación \[\left \|P-C\right\|=r\] \(r>0\) es el radio, \(C=(h,k)\) es el centro entonces la ecuación del círculo es \[\left \|P-C\right\|=r\iff (x-h)^2+(y-k)^2=r^2.\]
+\hypertarget{superficies-poliedricas}{%
+\section{Superficies poliedricas}\label{superficies-poliedricas}}
 
-La ecuación de la recta tangente en \(P_0=(x_0,y_0)\) (\(P=P_0\) en el gráfico) está dada por \[(Q-P_0)\cdot(P_0-C)=0\] donde \(Q=(x,y)\neq P\) cualquiera; entonces \[(Q-P_0)\cdot(P_0-C)=0\iff  (x-x_0,y-y_0)(x_0-h,y_0-k)=0\] lo cual es equivalente a \[(x-h)(x_0-h)+(x-k)(y_0-k)=r^2\]
+www
 
-\hypertarget{paruxe1bola}{%
-\chapter{Parábola}\label{paruxe1bola}}
+\hypertarget{solidos-platuxf3nicos}{%
+\subsection{Solidos platónicos}\label{solidos-platuxf3nicos}}
 
-Sean la recta \(\mathcal{L}\) y el punto \(F\) fijos; los puntos \(P\) que satisfacen la ecuación
+\hypertarget{los-prismas}{%
+\subsection{Los prismas}\label{los-prismas}}
 
-\begin{equation} 
-d\left[P;F\right]=d\left[P;\mathcal{L}\right]=\left|p\right|\label{eq:www}
-\end{equation}
+\hypertarget{superficies-de-revolucion-y-regladas}{%
+\section{Superficies de revolucion y regladas}\label{superficies-de-revolucion-y-regladas}}
 
-generan una curva llamada \emph{parábola}, la excentricidad es el cociente de estas dos distancias que es igual a \(1\) pues ambas son iguales a \(\left|p\right|\).
+\hypertarget{superficies-curvas}{%
+\section{Superficies curvas}\label{superficies-curvas}}
 
-\(\mathcal{L}\) es la \emph{recta directriz} cuya ecuación es \(x'=-p\) en el sistema \(X'Y'\); \(F\) es el \emph{foco}, \(V=(h,k)\) el \emph{vertice}; \(p\) es el parámetro de la parábola; y \(RR'\) el \emph{lado recto} de la parábola.
+\hypertarget{cerradas}{%
+\subsection{Cerradas}\label{cerradas}}
 
-\begin{figure}
+Esfera Elipsoide
 
-{\centering \includegraphics{parabola} 
+\hypertarget{abiertas}{%
+\subsection{Abiertas}\label{abiertas}}
 
-}
+\hypertarget{orientables}{%
+\subsection{Orientables}\label{orientables}}
 
-\caption{Prábola}\label{fig:hiperbola1}
-\end{figure}
+\hypertarget{no-orientables}{%
+\subsection{No orientables}\label{no-orientables}}
 
-Los puntos \(P\) en el sistema \(X'Y'\) satisfacen
-\(P=(x,y)=V+x'\vec{u}+y'\vec{u}^\perp\) de donde al despejar \(x'\) e \(y'\) resultan \(x'=[(x,y)-V]\vec{u}\) e \(y'=[(x,y)-V]\vec{u}^\perp\)
-la recta directriz en el sitema \(X'Y'\) es
-\(\mathcal{L}=\left\{Q/Q=(V-p\vec{u})+t\vec{u}^\perp,\:t\in \mathbb{R}\right\}\); donde el vértice es \(F=V+p\vec{u}\) luego se tiene las ecuaciónes
+\hypertarget{fractales-3d}{%
+\section{Fractales 3D}\label{fractales-3d}}
 
-\begin{equation}
-d[P;\mathcal{L}]=\left|\text{Cp}_{\vec{u}}\vec{PQ}\right|=\left|(Q-P)\cdot\vec{u}\right|=\left|x'+p\right|\label{eq:1w}
-\end{equation}
+\hypertarget{composiciuxf3n-de-formas}{%
+\chapter{Composición de formas}\label{composiciuxf3n-de-formas}}
 
-\begin{equation}
-d[P;F]=\left|P-F\right|=\left|(x'-p)\vec{u}+y'\vec{u}^{\perp}\right|\label{eq:2w}
-\end{equation}
+\hypertarget{operaciones-con-formas}{%
+\section{Operaciones con formas}\label{operaciones-con-formas}}
 
-por lo tanto reemplazando \eqref{eq:1w} y \eqref{eq:2w} en \eqref{eq:www}
-\begin{align*}
-d\left[P;F\right]^2=d\left[P;\mathcal{L}\right]^2
-& \implies \left|(x'+p)\vec{u}+y'\vec{u}^\perp\right|^2=\left|x'+p\right|^2 \\
-&\implies (x'-p)^2+y'^2=(x'+p)^2\\
-&\implies y'^2=4px'
-\end{align*}
+\hypertarget{union}{%
+\subsection{Union}\label{union}}
 
-De este modo \(P\in\mathcal{P}\) si \(P\) satisface la \emph{ecuacion vectorial} de \(\mathcal{P}\) \[P=(x,y)=V+x'\vec{u}+y'\vec{u}^\perp;\: \text{donde } y'^2=4px'; \:\left|\vec{u}\right|=1\]
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-1}{}{\label{def:unnamed-chunk-1} }wwwwwwwwwwwwwwwwwwwwwww
+\end{definition}
 
-Cuando el eje es paralelo al eje \(x\); se tiene \(\vec{u}=i=(1,0)\) entonces \[(x,y)=V+x'\vec{u}+y'\vec{u}^\perp=(h+x',k+y')\] implica \(x'=x-h\) y \(y'=y-k\) en \(y'^2=4px'\) resulta \((y-k)^2=4p(x-h)\) (\(y^2=4px\) si \(V\) está en el origen); entonces \(F=V+p\vec{u}=(h+p,k)\); \(\mathcal{L}: x=h-p\). Si \(p<1\) la parábola se invierte simétricamente a la directriz.
+\hypertarget{interseccion}{%
+\subsection{Interseccion}\label{interseccion}}
 
-Cuando el eje es paralelo al eje \(y\); \(\vec{u}=j=(0,1)\) entonces \[(x,y)=V+x'\vec{u}+y'\vec{u}^\perp=(h-y',k+x')\] implica \(x'=y-k\) y \(y'=h-x\) en \(y'^2=4px'\) resulta \((x-h)^2=4p(y-k)\) (\(x^2=4py\) si \(V\) está en el origen); entonces \(F=V+p\vec{u}=(h,k+p)\); \(\mathcal{L}: x=k-p\). Si \(p<1\) la parábola se invierte simétricamente a la directriz.
+\hypertarget{diferencia}{%
+\subsection{Diferencia}\label{diferencia}}
 
-\begin{theorem}[Ecuaciones de la recta tangente de una parábola]
-\protect\hypertarget{thm:unnamed-chunk-1}{}{\label{thm:unnamed-chunk-1} \iffalse (Ecuaciones de la recta tangente de una parábola) \fi{} }La ecuación de la recta tangente a \(y^2=4px\) en el punto \(P_0=(x_0,y_0)\) está dada por
-\begin{equation}
-y=\frac{2p}{y_0}(x+x_0)
-\label{eq:w1}
-\end{equation}
-y la ecuación de la recta tangente a \((y-k)^2=4p(x-h)\) en el punto \(P_0=(x_0,y_0)\) está dada por
-\begin{equation}
-(y_0-k)(x_0-k)=4p\left[\left(\frac{x+x_0}{2}-h\right)\right]
-\label{eq:w2}
-\end{equation}
-similarmente la ecuación de la recta tangente a \((x-h)^2=4p(y-k)\) en el punto \(P_0=(x_0,y_0)\) está dada por
-\begin{equation}
-(x_0-h)(x_0-h)=4p\left[\left(\frac{y+y_0}{2}-h\right)\right].
-\label{eq:w3}
-\end{equation}
-\end{theorem}
+\hypertarget{diferencia-simetrica}{%
+\subsection{Diferencia simetrica}\label{diferencia-simetrica}}
 
-\begin{proof}
-\iffalse{} {Demostracion. } \fi{}En efecto sea \ldots{}
-\end{proof}
+\hypertarget{complemento}{%
+\subsection{Complemento}\label{complemento}}
 
-\begin{exercise}
-\protect\hypertarget{exr:unnamed-chunk-3}{}{\label{exr:unnamed-chunk-3} }Al realizarse una transformacion de coordenadas, el eje de una parabola \(\mathcal{P}\) resulta orientada segun el vector \((3,4)\). En \(X'Y'\) un punto \(Q'=(20,-20)'\in\mathcal{P}\) en els sistema \(xy\) el foco de \(\mathcal{P}\) \(E=(11,5)\). Determinar en el sistema \(xy\) un punto \(R\) de la parabola \(\mathcal{P}\) tal que el trinagulo \(QVR\) sea rectangulo en \(V\) vertice de la parábola.\\
-\end{exercise}
+\hypertarget{componiendo-escenas}{%
+\section{Componiendo escenas}\label{componiendo-escenas}}
 
-\begin{exercise}
-\protect\hypertarget{exr:unnamed-chunk-4}{}{\label{exr:unnamed-chunk-4} }La circunferencia \(\mathcal{C}=(x-3)^2+(y-3)^2=25\) es tangente a una parábola \(\mathcal{P}\) en \(P_0=(x_0,y_0)\), \(y_0>7\). La recta \(\mathcal{L}:4x-3y+12=0\) es normal a \(\mathcal{P}\) y \(\mathcal{C}\) en \(P_0\) y corta al eje focal de \(\mathcal{P}\) en el punto \(R\). Si \(\left|\vec{C_0P_0}\right|=\left|\vec{P_0R}\right|\) y si la distancia \(d[P_0; \text{eje focal}]=4\), hallar la ecuación de la parábola \(\mathcal{P}\). \(C_0\) es el centro de la circunferencia y la absisa del vértice es menor que 6.
-\end{exercise}
-\begin{solution}
-\iffalse{} {Solución. } \fi{}\(P_0=C_0\pm r\vec{u}_{\mathcal{L}}\) donde \(r=5\), \(C_0=(3,8)\) y \(\vec{u}_{\mathcal{L}}=\frac{(3,4)}{5}\) es decir \(P_0=(3,8)\pm 5\frac{(3,4)}{5}\) de esto consideramos \(P_0=(x_0,y_0)=(6,12)\) por condición del problema con esto la recta tangente a \(\mathcal{C}\) y \(\mathcal{P}\) es \(\mathcal{L}_T:(x,y)(3,4)=(3,4)(6,12)\) equivalentemente \(\mathcal{L}_T:3x+4y=66\).
+\hypertarget{utilizando-software}{%
+\subsection{Utilizando software}\label{utilizando-software}}
 
-Ya que \(\left|\vec{C_0P_0}\right|=5=\left|\vec{P_0R}\right|\) y \(d[P_0;\text{eje focal}]=d[P_0; Q]=4\) entonces el triángulo \(P_0QR\) es un triángulo rectángulo notable, por lo tanto \(\left|\vec{QR}\right|=3\) por el Teorema de Pitágoras, además \(\vec{P_0R}=\vec{P_0Q}+\vec{QR}\) es decir si \(\vec{P_0Q}=(v_1,v_2)\) se tiene la ecuacion \((3,4)=4(v_1,v_2)\pm 3(-v_2,v_1)\) que al resolverla se tiene \(\vec{P_0R}=(v_1,v_2)=(1,0)\) o \(\vec{P_0R}=(v_1,v_2)=\left(\frac{24}{25},\frac{7}{25}\right)\) entonces \(Q=P_0+4(0,1)=(6,16)\) o \(Q=P_0+4\left(\frac{24}{25},\frac{7}{25}\right)=\left(6+\frac{96}{25},12+\frac{28}{25}\right)\) esto indica considerar \(Q=(6,16)\) pues el vertice (tiene absisa menor que 6), debe estar a la derecha de \(P_0\) pues la recta \(\mathcal{L}_T\) tiene pendiente negativa. Por lo tanto \(\mathcal{L}_T\cap \mathcal{F}:x=16=(\frac{2}{3},16)\) y por propiedad de la tangente a una parábola se tiene el vértice \(V=\left(\frac{\mathcal{L}_T\cap \mathcal{F}+Q}{2}\right)=\left(\frac{10}{3}, 16\right)\). La ecuación de la parabola en le sistema original es \((y-h)^2=4\rho(x-k)\) donde \((h,k)=\left(\frac{10}{3}, 16\right)\) y \((6,12)\in\mathcal{P}\) se tiene \((-4)^2=4\rho(8/3)\) de donde \(\rho=\frac{3}{2}\) entonces la recta directriz pasa por \(\left(\frac{10}{3}, 16\right)+\frac{3}{2}(1,0)=\left(\frac{7}{3}, 16\right)\) por tanto \(\mathcal{L}_D:x=\frac{7}{3}\) y la ecuacion de la parábola es \[(y-16)^2=4\rho\left(x-\frac{10}{3}\right)\] por ser paralela al eje \(x.\)
-\end{solution}
+\hypertarget{el-bodegon}{%
+\subsection{El bodegon}\label{el-bodegon}}
 
-\begin{exercise}
-\protect\hypertarget{exr:unnamed-chunk-6}{}{\label{exr:unnamed-chunk-6} }Los puntos \(A=(60,13)\) y \(B=(-4,61)\) estan sobre una parábola \(\mathcal{P}\) además son simétricos con recpecto al eje focal. Desde un punto \(Q\) sobre el eje focal se traza un recta tangente a \(\mathcal{P}\) que pasa por \(B,\) hallar la ecuación de \(\mathcal{P}\) y las ecuaciones de las rectas tangentes trazadas desde \(Q\).
-\end{exercise}
+\hypertarget{la-superficie}{%
+\subsection{La superficie}\label{la-superficie}}
 
-\begin{solution}
-\iffalse{} {Solución. } \fi{}Ya que \(A\) y \(B\) son simétricas entonces \(P_0=\frac{A+B}{2}=(28,37) \in \mathcal{L}_F\) donde \(\mathcal{L}_F\) es el eje focal paralelo al vector \(\vec{AB}^\perp=(B-A)^\perp=(-64,48)\parallel(-4,3)=\vec{v}_L\) es decir \(\vec{v}_F\) y \(P_0\) nos genera la ecuación del eje focal \(\mathcal{L}_F:4x+3y=1\). De otro lado dado el punto \(Q=(20,x)\in\mathcal{L}_F\) que al reemplazarlo en la recta del eje focal nos genera \(x=-27\) de donde \(Q=(20,-27)\) ademas el vértice de la parabola es \(V=\frac{Q+P_0}{2}=(4,5)\) por propiedad.
+\hypertarget{wwwwwwwwwww}{%
+\subsection{wwwwwwwwwww}\label{wwwwwwwwwww}}
 
-Con el objetivo de hallar el valor de \(\rho\) en la ecuación \(y'^2=4\rho x'\) se halla las coordenadas de \(B\) en el nuevo sistema de coordenadas centrada en \(V\) con vector director \(\vec{u}=\frac{(3,4)}{5}\), haciendo uso de la relación \[(x,y)=V+x'\vec{u}+y'\vec{u}^\perp\] se obtiene \(x'=\left[B-V\right]\vec{u}=40\) y \(y'=\left[B-V\right]\vec{u}^\perp=40\) por tanto reemplazando \(B=(-4,61)=(40,40)'\) en \(y'^2=4\rho x'\) se tiene que \(\rho=10\)
+\hypertarget{formas-organicas}{%
+\chapter{Formas organicas}\label{formas-organicas}}
 
-Los vectores directores de las rectas tangentes en el sistema \(X'Y'\) son \((2,1)\) y \((2,-1)\) respectivamente por tanto sus ecuaciones son \(\mathcal{L}_A: 2y'=x'+40\) y \(\mathcal{L}_B=-2y'=x'+40\) estas ecuaciones en el sistema original con \(x'=\left[(x,y)-(4,5)\right]\frac{(3,4)}{5}\) y \(y'=\left[(x,y)-(4,5)\right]\frac{(-4,3)}{5}\) reemplazadas resultan \(\mathcal{L}_A:2y-11x-166=0\) y \(\mathcal{L}_B:5x-10y-170=0\)
-\end{solution}
-1. ww
+\hypertarget{geometrizacion}{%
+\section{Geometrizacion}\label{geometrizacion}}
 
-\hypertarget{elipse}{%
-\chapter{Elipse}\label{elipse}}
+\hypertarget{redes}{%
+\section{Redes}\label{redes}}
 
-\hypertarget{preliminares}{%
-\section{Preliminares}\label{preliminares}}
+\hypertarget{geomorfologia}{%
+\section{Geomorfologia}\label{geomorfologia}}
+
+\hypertarget{fitomorfologia}{%
+\section{Fitomorfologia}\label{fitomorfologia}}
+
+\hypertarget{zoomorfologia}{%
+\section{Zoomorfologia}\label{zoomorfologia}}
+
+\hypertarget{formas-abstractas}{%
+\chapter{Formas abstractas}\label{formas-abstractas}}
+
+\hypertarget{caos-y-orden}{%
+\section{Caos y orden}\label{caos-y-orden}}
+
+\citep{bookdown2016}wwwwwww \citep{vincze2014college}
+
+\hypertarget{ejercicios}{%
+\section{Ejercicios}\label{ejercicios}}
+
+wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+
+\hypertarget{formas-matematicas}{%
+\chapter{Formas Matematicas}\label{formas-matematicas}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}
+  \FunctionTok{head}\NormalTok{(iris, }\DecValTok{20}\NormalTok{), }\AttributeTok{caption =} \StringTok{\textquotesingle{}Here is a nice table!\textquotesingle{}}\NormalTok{,}
+  \AttributeTok{booktabs =} \ConstantTok{TRUE}
+\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{table}
+
+\caption{\label{tab:nice-tab}Here is a nice table!}
+\centering
+\begin{tabular}[t]{rrrrl}
+\toprule
+Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
+\midrule
+5.1 & 3.5 & 1.4 & 0.2 & setosa\\
+4.9 & 3.0 & 1.4 & 0.2 & setosa\\
+4.7 & 3.2 & 1.3 & 0.2 & setosa\\
+4.6 & 3.1 & 1.5 & 0.2 & setosa\\
+5.0 & 3.6 & 1.4 & 0.2 & setosa\\
+\addlinespace
+5.4 & 3.9 & 1.7 & 0.4 & setosa\\
+4.6 & 3.4 & 1.4 & 0.3 & setosa\\
+5.0 & 3.4 & 1.5 & 0.2 & setosa\\
+4.4 & 2.9 & 1.4 & 0.2 & setosa\\
+4.9 & 3.1 & 1.5 & 0.1 & setosa\\
+\addlinespace
+5.4 & 3.7 & 1.5 & 0.2 & setosa\\
+4.8 & 3.4 & 1.6 & 0.2 & setosa\\
+4.8 & 3.0 & 1.4 & 0.1 & setosa\\
+4.3 & 3.0 & 1.1 & 0.1 & setosa\\
+5.8 & 4.0 & 1.2 & 0.2 & setosa\\
+\addlinespace
+5.7 & 4.4 & 1.5 & 0.4 & setosa\\
+5.4 & 3.9 & 1.3 & 0.4 & setosa\\
+5.1 & 3.5 & 1.4 & 0.3 & setosa\\
+5.7 & 3.8 & 1.7 & 0.3 & setosa\\
+5.1 & 3.8 & 1.5 & 0.3 & setosa\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+wwwwwwwwwwwwwwwwwwwwwwwwwww
+
+\hypertarget{funciones}{%
+\section{Funciones}\label{funciones}}
+
+wwwwwwwwww\index{wwwwwwww} \citep{vincze2014college}
+
+\hypertarget{ejercicios-1}{%
+\section{Ejercicios}\label{ejercicios-1}}
+
+\hypertarget{appendix-apendice}{%
+\appendix \addcontentsline{toc}{chapter}{\appendixname}}
+
+
+Temas de reforzamiento o conocimientos preliminares que son necesarias para entender el contenido.
+
+\hypertarget{trasformaciones}{%
+\chapter{Trasformaciones}\label{trasformaciones}}
+
+Se refiere a las transformaciones o modificaciones que pueden sufrir las formas, es decir los achatamientos, las elongaciones los cambios de posición etc., mediante la manipulación de los puntos pertenecientes a la forma.
+
+\begin{definition}[Transformación]
+\protect\hypertarget{def:transformacion}{}{\label{def:transformacion} \iffalse (Transformación) \fi{} }Una transformacion es el proceso de modificar una forma covirtiendola en otra
+\end{definition}
+
+\hypertarget{trasformaciones-elementales}{%
+\section{Trasformaciones elementales}\label{trasformaciones-elementales}}
+
+En esta seccion se trata sobre la trasformaciones basicas que son la traslación, la rotación, la reflexión y la homotescia o escala
+
+\hypertarget{traslacion}{%
+\subsection{Traslacion}\label{traslacion}}
+
+\begin{definition}[Traslación]
+\protect\hypertarget{def:traslacion}{}{\label{def:traslacion} \iffalse (Traslación) \fi{} }La traslacion de un objeto, consiste en mover todos los puntos del objeto en el espacio 2D o 3D en una solo dirección, un solo sentido y a una distancia determinada.
+\end{definition}
 
 \begin{example}
-\protect\hypertarget{exm:unnamed-chunk-8}{}{\label{exm:unnamed-chunk-8} }wwwwwwwww
+\protect\hypertarget{exm:unnamed-chunk-2}{}{\label{exm:unnamed-chunk-2} }Sea figura \texttt{\ref{fig:Doge}} la derección de \(37^\circ\), el sentido indicada por la flecha y la distancia 5 unidades.
 \end{example}
-Dados dos puntos distintos \(F_1\) y \(F_2\) llamados focos; la elipse\index{elipse} \(\mathcal{E}\) es el conjunto formado por los puntos \(P\) que satisfacen la ecuacion
-\begin{equation} 
-\left|P-F_1\right|+\left|P-F_2\right|=2a
-\label{eq:binom}
-\end{equation}
-\(C=(h,k)\) es el centro de la elipse; \(x'\) eje focal, \(V_1\) y \(V_2\) son los vértices de la elipse; \(\overline{V_1V_2}\) el eje mayor \(\overline{RR'}\) el lado recto; \(\overline{B_1B_2}\) el eje menor de longitud \(2b\). En el sistema \(X'Y'\) se tiene \(B_1=(0,b)'\); \(B_2=(0,-b)'\); \(F_1=(-c,0)'\); \(F_2=(c,0)'\) y \(C=(0,0)'\).
+
+www
 
 \begin{figure}
 
@@ -370,174 +515,85 @@ Dados dos puntos distintos \(F_1\) y \(F_2\) llamados focos; la elipse\index{eli
 
 }
 
-\caption{Elipse}\label{fig:pressure1}
+\caption{Hola}\label{fig:Doge}
 \end{figure}
 
-Dado \(P\in \mathcal{E}\), la excentricidad \(e\) se define como
-\begin{equation}
-\frac{d\left[P;F_1\right]}{d\left[P;\mathcal{L}_1\right]}=e=\frac{d\left[P;F_2\right]}{d\left[P;\mathcal{L}_2\right]}
-\label{eq:ww}
-\end{equation}
-\(d\left[B_i;F_1\right]=d\left[B_i;F_2\right]= a\) y \(d\left[V_i;C\right]=d\left[V_i;C\right]=a\), \(i=1,2\).
+\begin{example}
+\protect\hypertarget{exm:unnamed-chunk-3}{}{\label{exm:unnamed-chunk-3} }www wwwwwwwwwwww wwwwwwwwwwwwwww
+\end{example}
 
-\begin{theorem}
-\protect\hypertarget{thm:unnamed-chunk-9}{}{\label{thm:unnamed-chunk-9} }En la elipse se verifican las siguientes igualdades
+En la escala u homotescia tambien existen procedimientos de proporción \ref{fig:Doge}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  \(d\left[B_1;F_i\right]=d\left[B_2;F_i\right]=a\)
-\item
-  \(d\left[V_1;C\right]=d\left[V_2;C\right]=a\)
-\item
-  \(d\left[C;\mathcal{L}_1\right]=d\left[C;\mathcal{L}_2\right]=\frac{c}{e}\)
-\item
-  \(c=d\left[P;F_1\right]=d\left[P;F_2\right]\implies c=ae\)
-\end{enumerate}
-\end{theorem}
+\hypertarget{rotacion}{%
+\subsection{Rotacion}\label{rotacion}}
 
-\begin{proof}
-\iffalse{} {Demostracion. } \fi{}
-1. Ya que \(d\left[B_1;F_1\right]+d\left[B_1;F_2\right]=2a=d\left[B_2;F_1\right]+d\left[B_2;F_2\right]\) es decir \(2d\left[B_1;F_i\right]=2a=2d\left[B_2;F_i\right]\) entonces \(d\left[B_1;F_i\right]=a=d\left[B_2;F_i\right]\) \(i=1,2\).
+\begin{definition}[Traslación]
+\protect\hypertarget{def:rotacion}{}{\label{def:rotacion} \iffalse (Traslación) \fi{} }La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada
+\end{definition}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\item
-  Por la definición \eqref{eq:binom} de la elipse se tiene
-  \begin{equation}
-  d\left[V_1;F_2\right]+d\left[V_1;F_1\right]=2a
-  \label{eq:er}
-  \end{equation}
-  además la diferencia
-  \begin{equation}
-  d\left[V_1;F_2\right]-d\left[V_1;F_1\right]=2c
-  \label{eq:err}
-  \end{equation}
-  restando las ecuaciones \eqref{eq:er} y \eqref{eq:err} se tiene
-  \begin{equation}
-  d\left[V_1;F_1\right]=a-c
-  \label{eq:errr}
-  \end{equation}
-  entonces haciendo uso de \eqref{eq:errr} en \(d\left[V_1;C\right]=d\left[V_1;F_1\right]+d\left[F_1;C\right]=(a-c)+c=a\); de manera similar para el vértice \(V_2\).
-\item
-  En efecto se sabe que \[\frac{d\left[B;F_i\right]}{d\left[B;\mathcal{L}_i\right]}=e\Longleftrightarrow \frac{a}{d\left[B;\mathcal{L}_i\right]}=e\] además \(d\left[B_i;\mathcal{L}_i\right]=d\left[C;\mathcal{L}_i\right]\) por lo tanto \(\frac{a}{d\left[C;\mathcal{L}_i\right]}=e\).
-\item
-  Pues \[\frac{d\left[P;F_1\right]}{d\left[P;\mathcal{L}_1\right]}=e\] implica \(\frac{a-c}{\frac{a}{e}-a}=e\) es decir \(c=ae\).
-\end{enumerate}
+\hypertarget{reflexiuxf3n}{%
+\subsection{Reflexión}\label{reflexiuxf3n}}
 
-Por lo tanto
-\end{proof}
+La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada
 
-\(a>b\) y \(a^2=b^2+c^2\); pues \(a=d\left[B_1;F_2\right]=d\left[(0,b^2+c^2)';(c,0)'\right]^2=\sqrt{b}\); \(0<e<1\) debido a que \(0<e=\frac{a}{e}<1\) y \(a>c>0\).
+\hypertarget{homotescia}{%
+\subsection{Homotescia}\label{homotescia}}
 
-\(P=(x,y)=C+x'\vec{u}+y'\vec{u}^\perp\); \(x'=[(x,y)-C]\vec{u}\); \(y'=[(x,y)-C]\vec{u}^\perp\)
+La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada
 
-\(F_1=C+c\vec{u}\) y \(F_2=C-c\vec{u}\) entonces
+\hypertarget{trasformaciones-topoluxf3gicas}{%
+\section{Trasformaciones topológicas}\label{trasformaciones-topoluxf3gicas}}
 
-\begin{align*}
-\left|P-F_1\right|+\left|P-F_2\right|&=\left|C+x'\vec{u}+y'\vec{u}^\perp-C+c\vec{u}\right|\\
-&\quad+\left|C+x'\vec{u}+y'\vec{u}^\perp-C-c\vec{u}\right|\\
-&=\sqrt{(x'+c)^2+y'^2}+\sqrt{(x'-c)^2+y'^2}=2a\end{align*}
+La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada
 
-por lo tanto resolviendo \(\sqrt{(x'+c)^2+y'^2}+\sqrt{(x'-c)^2+y'^2}=2a\) resulta \((a^2-c^2)x'^2+ay'^2=a^2(a^2-c^2)\implies b^2x'^2+a^2y'^2=a^2b^2\)
+\hypertarget{homeomofismo}{%
+\subsection{Homeomofismo}\label{homeomofismo}}
 
-De este modo \(P\in\mathcal{E}\) si \(P\) satisface la ecuación vectorial \[P=(x,y)=V+x'\vec{u}+y'\vec{u}^\perp;\: \text{donde } \frac{x'^2}{a^2}+\frac{y'^2}{b^2}=1; \:\left|\vec{u}\right|=1\]
+La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada
 
-Cuando el eje es paralelo al eje \(x\); \(\vec{u}=i=(1,0)\) entonces \((x,y)=V+x'\vec{u}+y'\vec{u}^\perp=(h+x',k+y')\implies x'=x-h\) y \(y'=y-k\) en \(\frac{x'^2}{a^2}+\frac{y'^2}{b^2}=1\) resulta \(\frac{(y-k)^2}{a^2}+\frac{(y-k)^2}{b^2}=1\) (\(\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\) si \(V\) está en el origen); entonces \(F_1=C+c\vec{u}=(h+c,k)\); \(\mathcal{L}_1: x=h+\frac{a}{e}\) y \(\mathcal{L}_2: x=h-\frac{a}{e}\).
+\hypertarget{homomorfismo}{%
+\subsection{Homomorfismo}\label{homomorfismo}}
 
-Cuando el eje es paralelo al eje \(y\); \(\vec{u}=j=(0,1)\) entonces \((x,y)=V+x'\vec{u}+y'\vec{u}^\perp=(h-y',k+x')\implies x'=y-k\) y \(y'=h-x\) en \(\frac{x'^2}{a^2}+\frac{y'^2}{b^2}=1\) resulta \(\frac{(y-k)^2}{a^2}+\frac{(y-k)^2}{b^2}=1\) (\(\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\) si \(V\) está en el origen); entonces \(F_1=C+c\vec{u}=(h+c,k)\); \(\mathcal{L}_1: x=k+\frac{a}{e}\) y \(\mathcal{L}_2: x=k-\frac{a}{e}\).
+La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada \citep{xie2015}
 
-\begin{corollary}
-\protect\hypertarget{cor:unnamed-chunk-11}{}{\label{cor:unnamed-chunk-11} }The characteristic function of the sum of two independent random variables \(X_1\) and \(X_2\) is the product of characteristic functions of \(X_1\) and \(X_2\), i.e.,
-\[\varphi _{X_1+X_2}(t)=\varphi _{X_1}(t) \varphi _{X_2}(t)\]
-\end{corollary}
+\hypertarget{isomorfismo}{%
+\subsection{Isomorfismo}\label{isomorfismo}}
 
-\begin{exercise}[Characteristic Function of the Sample Mean]
-\protect\hypertarget{exr:unnamed-chunk-12}{}{\label{exr:unnamed-chunk-12} \iffalse (Characteristic Function of the Sample Mean) \fi{} }Let \(\bar{X}=\sum_{i=1}^n \frac{1}{n} X_i\) be the sample mean of \(n\) independent and identically distributed random variables, each with characteristic function \(\varphi_{X}.\) Compute the characteristic function of \(\bar{X}\).
-\end{exercise}
+\hypertarget{wwwwwomorfismo}{%
+\subsection{wwwwwomorfismo}\label{wwwwwomorfismo}}
 
-\begin{solution}
-\iffalse{} {Solución. } \fi{}Applying Theorem, we have
-\[\varphi _{\bar{X}}(t)=\prod_{i=1}^n \varphi _{X_i}\left(\frac{t}{n}\right)=\left[\varphi _{X}\left(\frac{t}{n}\right)\right]^n.\]
-\end{solution}
+\hypertarget{centro-de-masa}{%
+\chapter{Centro de masa}\label{centro-de-masa}}
 
-\hypertarget{hipuxe9rbola}{%
-\chapter{Hipérbola}\label{hipuxe9rbola}}
+\hypertarget{centro-de-masa-de-objetos-2d}{%
+\section{Centro de masa de objetos 2D}\label{centro-de-masa-de-objetos-2d}}
 
-Los puntos \(P\) de un hipérbola verifican la siguiente ecuación
-\[\left|\left|P-F_1\right|-\left|P-F_1\right|\right|=2a\]
-\(C=(h,k)\) es el centro de la hipérbola; \(V_1\) y \(V_2\) son los vértices; \(F_1\) y \(F_2\)
-son los focos; \(\overline{V_1V_2}\) es el eje transversal; \(\overline{B_1B_2}\) es el eje conjugado; \(X'\) es el eje focal
-\[d\left[C;F_1\right]=d\left[C;F_2\right]=c\]
-\(F_1=(-c,0)\); \(F_1=(c,0)\) en el sistema coordenado \(X'Y'\); \(\mathcal{C}\) circunferencia con centro en \(C\), radio \(c\) que pasa por los focos.
+\hypertarget{metodos-matematicos}{%
+\subsection{Metodos matematicos}\label{metodos-matematicos}}
 
-\[d\left[V_1;C\right]=d\left[V_2;C\right]=a\]
+\hypertarget{metodos-tecnicos}{%
+\subsection{Metodos tecnicos}\label{metodos-tecnicos}}
 
-\begin{figure}
+\hypertarget{muxe9todo-del-borde-de-la-mesa}{%
+\subsubsection{Método del borde de la mesa}\label{muxe9todo-del-borde-de-la-mesa}}
 
-{\centering \includegraphics{hiperbola} 
+\hypertarget{muxe9todo-de-la-plomada}{%
+\subsubsection{Método de la plomada}\label{muxe9todo-de-la-plomada}}
 
-}
+\hypertarget{centro-de-masa-de-objetos-3d}{%
+\section{Centro de masa de objetos 3D}\label{centro-de-masa-de-objetos-3d}}
 
-\caption{Hipérbola}\label{fig:hiperbola}
-\end{figure}
+\hypertarget{metodos-matematicos-1}{%
+\subsection{Metodos matematicos}\label{metodos-matematicos-1}}
 
-\[\frac{d\left[P;F_1\right]}{d\left[P;\mathcal{L}_1\right]}=e=\frac{d\left[P;F_2\right]}{d\left[P;\mathcal{L}_2\right]}\]
+\hypertarget{metodos-tecnicos-1}{%
+\subsection{Metodos tecnicos}\label{metodos-tecnicos-1}}
 
-\(c=ae\); \(d\left[C;\mathcal{L}_1\right]=d\left[C;\mathcal{L}_2\right]=\frac{a}{e}\) y \(e>1\); en efecto \[\frac{d\left[R;F_1\right]}{d\left[R;\mathcal{L}_1\right]}=\frac{\frac{b^2}{a}}{c-d\left[C;\mathcal{L}_1\right]}=\frac{c^2-a^2}{a(c-d\left[C;\mathcal{L}_1\right])}\]
+\hypertarget{muxe9todo-de-las-secciones}{%
+\subsubsection{Método de las secciones}\label{muxe9todo-de-las-secciones}}
 
-\[\frac{d\left[V_2;F_1\right]}{d\left[V_2;\mathcal{L}_1\right]}=\frac{c-a}{a-d\left[C;\mathcal{L}_2\right]}.\]
-
-De la primera \[d\left[C;\mathcal{L}_2\right]=a-\frac{c-a}{e}\implies c-d\left[C;\mathcal{L}_2\right]=a-\frac{(c-a)(e+1)}{e}.\]
-
-De la segunda ecuación \[c^2-a^2=ae\frac{(c-a)(e+1)}{e}\implies c+a=a(e+1)\implies c=ae\] luego \(d\left[C;\mathcal{L}_2\right]=a-\frac{(c-a)(ae+a)}{e}=\frac{a}{e}\) y el caso \(d\left[C;\mathcal{L}_1\right]\) es similar. Finalmente \(e=\frac{c}{a}>1\) pues \(0<a<c.\)
-
-\(P=(x,y)=C+x'\vec{u}+y'\vec{u}^\perp\) \(x'=[(x,y)-C]\vec{u}\) y \(y'=[(x,y)-C]\vec{u}^\perp\)
-
-\(F_1=C+c\vec{u}\) y \(F_2=C-c\vec{u}\) tambien \(V_1=C+a\vec{u}\) y \(V_2=C-a\vec{u}\) entonces \[\frac{d\left[P;F_1\right]}{d\left[P;\mathcal{L}_1\right]}=e\iff d\left[P;F_1\right]^2=e^2d\left[P;\mathcal{L}_1\right]^2\] haciendo uso de \(c=ae\) y \(c^2=a^2+b^2\) se tiene lo siguiente
-
-\[(x'-c)^2+y'^2=e^2\left(x'-\left(\frac{a}{e}\right)\right)^2\]
-
-\[(c^2-a^2) x'^2+a^2y'^2=a^2(c^2-a^2)\]
-
-\[b^2x'^2-a^2y'^2=a^2b^2\]
-
-De este modo \(P\in\mathcal{H}\) si \(P\) satisface la ecuación vectorial \[P=(x,y)=V+x'\vec{u}+y'\vec{u}^\perp;\: \text{donde } \frac{x'^2}{a^2}-\frac{y'^2}{b^2}=1; \:\left|\vec{u}\right|=1.\]
-
-Cuando el eje es paralelo al eje \(X\); \(\vec{u}=i=(1,0)\) entonces \[(x,y)=V+x'\vec{u}+y'\vec{u}^\perp=(h+x',k+y')\] se tiene \(x'=x-h\) y \(y'=y-k\) en \(\frac{x'^2}{a^2}-\frac{y'^2}{b^2}=1\); resulta \[\frac{(y-k)^2}{a^2}-\frac{(y-k)^2}{b^2}=1\] entonces \(F_1=C+c\vec{u}=(h-\frac{a}{e},k)\) y \(F_2=C+c\vec{u}=(h-\frac{a}{e},k)\); \(\mathcal{L}_1: x=h-\frac{a}{e}\) y \(\mathcal{L}_2: x=h+\frac{a}{e}\) y las asíntotas de \(y'=\pm\frac{a}{b}x'\) se convierte en \((y-k)=\pm\frac{a}{b}(x-h)\). Además \(\frac{x^2}{a^2}-\frac{y^2}{b^2}=1\); si \(V\) está en el origen.
-
-Cuando el eje es paralelo al eje \(Y\); \(\vec{u}=j=(0,1)\) se tiene \[(x,y)=V+x'\vec{u}+y'\vec{u}^\perp=(h-y',k+x')\] implica que \(x'=y-k\) y \(y'=h-x\) en \(\frac{x'^2}{a^2}-\frac{y'^2}{b^2}=1\); resulta \[\frac{(y-k)^2}{a^2}-\frac{(y-k)^2}{b^2}=1\] entonces \(F_1=C+c\vec{u}=(h+c,k)\); \(\mathcal{L}_1: x=k+\frac{a}{e}\) y \(\mathcal{L}_2: x=k-\frac{a}{e}\) y las asíntotas de \(y'=\pm\frac{b}{a}x'\) se convierte en \((y-k)=\pm\frac{b}{a}(x-h)\). Además \(\frac{x^2}{a^2}-\frac{y^2}{b^2}=1\); si \(V\) está en el origen.
-
-\citep{vincze2014college}
-\#\# Ejercicios
-
-\hypertarget{appendix-apendice}{%
-\appendix \addcontentsline{toc}{chapter}{\appendixname}}
-
-
-\hypertarget{ecuaciones-de-primer-grado}{%
-\chapter{Ecuaciones de primer grado}\label{ecuaciones-de-primer-grado}}
-
-\citep{xie2015}
-
-\hypertarget{raices-de-una-ecuacion-de-segundo-grado}{%
-\section{Raices de una ecuacion de segundo grado}\label{raices-de-una-ecuacion-de-segundo-grado}}
-
-\hypertarget{propiedades-de-una-ecuacion-de-segundo-grado}{%
-\section{Propiedades de una ecuacion de segundo grado}\label{propiedades-de-una-ecuacion-de-segundo-grado}}
-
-\hypertarget{ecacuaciones-lineales-de-primer-grado}{%
-\chapter{Ecacuaciones lineales de primer grado}\label{ecacuaciones-lineales-de-primer-grado}}
-
-\hypertarget{soluciones-de-ecuacuiones-lineales-de-primer-grado}{%
-\section{Soluciones de ecuacuiones lineales de primer grado}\label{soluciones-de-ecuacuiones-lineales-de-primer-grado}}
-
-\hypertarget{soluciones}{%
-\section{Soluciones \ldots{}}\label{soluciones}}
-
-\hypertarget{forma-matricial-de-una-ecuaciuxf3n-lineal}{%
-\section{Forma matricial de una ecuación lineal}\label{forma-matricial-de-una-ecuaciuxf3n-lineal}}
+\hypertarget{muxe9todo-de-la-plomada-1}{%
+\subsubsection{Método de la plomada}\label{muxe9todo-de-la-plomada-1}}
 
   \bibliography{book.bib,packages.bib}
 

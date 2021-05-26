@@ -1,13 +1,94 @@
-# (APPENDIX) Apendice {-}
+# (APPENDIX) Apendice {.unnumbered}
 
-# Ecuaciones de primer grado
-[@xie2015]
+Temas de reforzamiento o conocimientos preliminares que son necesarias para entender el contenido.
 
-## Raices de una ecuacion de segundo grado
-## Propiedades de una ecuacion de segundo grado
+# Trasformaciones
 
-# Ecacuaciones lineales de primer grado
+Se refiere a las transformaciones o modificaciones que pueden sufrir las formas, es decir los achatamientos, las elongaciones los cambios de posición etc., mediante la manipulación de los puntos pertenecientes a la forma.
 
-## Soluciones de ecuacuiones lineales de primer grado
-## Soluciones ...
-## Forma matricial de una ecuación lineal
+```{definition, transformacion, name="Transformación"}
+Una transformacion es el proceso de modificar una forma covirtiendola en otra
+```
+
+## Trasformaciones elementales
+
+En esta seccion se trata sobre la trasformaciones basicas que son la traslación, la rotación, la reflexión y la homotescia o escala
+
+### Traslacion
+
+```{definition, traslacion, name="Traslación"}
+La traslacion de un objeto, consiste en mover todos los puntos del objeto en el espacio 2D o 3D en una solo dirección, un solo sentido y a una distancia determinada.
+```
+
+```{example}
+Sea figura ```@ref(fig:Doge)``` la derección de $37^\circ$, el sentido indicada por la flecha y la distancia 5 unidades.
+```
+
+www
+
+```{r Doge, echo=FALSE, fig.align="center", fig.cap="Hola"}
+if (knitr::is_html_output()) {
+knitr::include_url("https://www.youtube.com/embed/TTpbP5BVtiA")
+knitr::include_graphics('elipse.svg')
+  } else {
+knitr::include_graphics('elipse.pdf')
+}
+```
+
+```{example}
+www wwwwwwwwwwww wwwwwwwwwwwwwww
+```
+
+En la escala u homotescia tambien existen procedimientos de proporción \@ref(fig:Doge)
+
+### Rotacion
+
+```{definition, rotacion, name="Traslación"}
+La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada 
+```
+
+### Reflexión
+
+La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada
+
+### Homotescia
+
+La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada
+
+## Trasformaciones topológicas
+
+La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada
+
+### Homeomofismo
+
+La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada
+
+### Homomorfismo
+
+La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada [@xie2015]
+
+### Isomorfismo
+
+### wwwwwomorfismo
+
+# Centro de masa
+
+## Centro de masa de objetos 2D
+
+### Metodos matematicos
+
+### Metodos tecnicos
+
+#### Método del borde de la mesa
+
+#### Método de la plomada
+
+## Centro de masa de objetos 3D
+
+### Metodos matematicos
+
+### Metodos tecnicos
+
+#### Método de las secciones
+
+#### Método de la plomada
