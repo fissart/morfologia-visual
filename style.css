@@ -18,6 +18,7 @@
 .rmdwarning {
   background-image: url("../images/warning.png");
 }
+/*
 p.caption {
   color: #777;
   margin-top: 10px;
@@ -41,6 +42,7 @@ blockquote > p:last-child {
 blockquote > p:first-child {
   text-align: inherit;
 }
+*/
 h1 {
   border-top-style: 2px solid;
 }
@@ -79,4 +81,23 @@ h1.title {
 }
   iframe {
   border: none;
+}
+
+/* If you like the first line of your paragraphs to be indented, you can add the option to make them so in Bookdown */
+/* Just add the below code to your Bookdown style.css file */
+/*
+p {
+  text-indent: 3em;
+}
+*/
+.book .book-body .page-wrapper .page-inner section.normal p{
+  margin-top:  0.85em
+}
+/* You can change the extent of the indentation by changing the amount. 3em is provided as an example */
+
+/* If you don't wish to indent the 1st paragraph of each section, but only the 2nd, 3rd, 4th etc.  */
+/* To do this, you can use teh below code instead */
+
+p:not(:first-of-type) {
+  text-indent: 3em;
 }

@@ -7,6 +7,8 @@
 %\usepackage{showframe}
 %\usepackage[a4paper]{geometry}
 %\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=3.5cm,rmargin=3cm}
+\setlength\parindent{23pt}
+\usepackage[singlelinecheck=off]{caption}
 
 \usepackage{times}
 \renewcommand{\rmdefault}{ptm}
@@ -26,10 +28,10 @@
 \makeatother
 
 % Resize figures that are too wide for the page.
-\let\oldincludegraphics\includegraphics
-\renewcommand\includegraphics[2][]{%
-  \oldincludegraphics[scale=0.85]{#2}
-}
+%\let\oldincludegraphics\includegraphics
+%\renewcommand\includegraphics[2][]{%
+%  \oldincludegraphics[scale=0.85]{#2}
+%}
 
 \usepackage{amsthm}
 \makeatletter
@@ -38,8 +40,6 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
-
-
 
 \flushbottom 
 

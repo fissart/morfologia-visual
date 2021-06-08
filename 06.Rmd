@@ -1,5 +1,5 @@
 # Formas Matematicas
-```{r nice-tab, tidy=FALSE}
+```{r nice-tab, message=TRUE, paged.print=TRUE, tidy=FALSE}
 knitr::kable(
   head(iris, 20), caption = 'Here is a nice table!',
   booktabs = TRUE

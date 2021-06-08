@@ -25,3 +25,8 @@ wwwwwwwwwwwwwwwwwwwwwww
 ### La superficie
 
 ### wwwwwwwwwww
+## Simetrías
+### Simetría axial
+### Simetría radial o puntual
+### Simetría esferica
+### Simetría planar

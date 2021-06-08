@@ -12,7 +12,7 @@ Una transformacion es el proceso de modificar una forma covirtiendola en otra
 
 ## Trasformaciones elementales
 
-En esta seccion se trata sobre la trasformaciones basicas que son la traslación, la rotación, la reflexión y la homotescia o escala
+En esta sección se trata sobre la trasformaciones básicas que son la traslación, la rotación, la reflexión y la homotescia o escala
 
 ### Traslacion
 
@@ -21,7 +21,7 @@ La traslacion de un objeto, consiste en mover todos los puntos del objeto en el 
 ```
 
 ```{example}
-Sea figura ```@ref(fig:Doge)``` la derección de $37^\circ$, el sentido indicada por la flecha y la distancia 5 unidades.
+Sea figura (\@ref(fig:Doge)) la derección de $37^\circ$, el sentido indicada por la flecha y la distancia 5 unidades.
 ```
 
 www
@@ -39,7 +39,7 @@ knitr::include_graphics('elipse.pdf')
 www wwwwwwwwwwww wwwwwwwwwwwwwww
 ```
 
-En la escala u homotescia tambien existen procedimientos de proporción \@ref(fig:Doge)
+En la escala u homotescia también existen procedimientos de proporción \@ref(fig:Doge)
 
 ### Rotacion
 
@@ -69,7 +69,7 @@ La traslacion es el proceso de mover todos los puntos de un objeto en el espacio
 
 ### Isomorfismo
 
-### wwwwwomorfismo
+### Isometría
 
 # Centro de masa
 
