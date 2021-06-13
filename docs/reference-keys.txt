@@ -1,7 +1,11 @@
 def:r2
 fig:2d
+eq:binom
+eq:align
+eq:www
 def:punto
 fig:puntolinea
+eq:wwwwwww
 def:linea
 def:direccionrecta
 def:tangentew

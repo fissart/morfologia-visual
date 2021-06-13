@@ -2,36 +2,51 @@
 
 # Formas bidimesionales
 
-En este capítulo se describirán definiciones y conceptos sobre las formas básicas que pueden ser representadas en el espacio bidimensional $\mathbb{R}^2$ tales como el punto, la linea, los polígonos, las formas orgánicas y los fractales bidimensionales
-
-```{=tex}
-\begin{align}
-w&=ww\\
-&=www_i\\
-\end{align}
-```
-``` {.tex}
-$$
-\begin{array}{ccc}
-x_{11} & x_{12} & x_{13}\\
-x_{21} & x_{22} & x_{23}
-\end{array}
-$$
-```
+En este capítulo se describirán definiciones y conceptos sobre las *formas básicas* que pueden ser representadas en el *espacio bidimensional* \index{espacio bidimensional} $\mathbb{R}^2$ tales como el punto, la linea, los polígonos, las formas orgánicas y los fractales bidimensionales.
 
 ## El punto y la linea
 
-Primeramente definamos el espacio donde se manipularán las formas bidimensionales, la importancia de este espacio se debe a la necesidad de un sistema de referencia que deben tener los objetos tales como la ubicación, la dirección, la relación de dos o más objetos entre otros.
+Primeramente definamos el *espacio* donde se manipularán las *formas bidimensionales*, la importancia de este espacio se debe a la necesidad de un *sistema de referencia*\index{sistema de referencia} que deben tener los objetos tales como la ubicación, la dirección, la relación de dos o más objetos entre otros.
 
-```{definition, r2, name="Espacio bidimesional"}
-El espacio bidimensional es un conjunto de puntos, donde cada punto utiliza como su sistema de referencia a un par de rectas llamadas ejes, la primera recta es horizontal llamada "eje $x$" y la otra es vertical llamada eje $y$.
+```{definition, r2, name=" Espacio bidimesional"}
 ```
+
+El espacio bidimensional \index{espacio bidimensional} es un *conjunto de puntos,* \index{conjunto de puntos} donde cada punto utiliza como su *sistema de referencia* a un *par de rectas* *llamadas ejes*, la primera recta es *horizontal* \index{horizontal} llamada "eje $x$" y la otra es *vertical* \index{vertical} llamada "eje $y$".
 
 ```{r 2d, echo=FALSE, fig.cap="Sistema de ejes coordenados", fig.pos = "!ht", fig.align="center"}
 knitr::include_graphics("ejes.svg")
 ```
 
-Estos ejes evidentemente se interceptan en un punto, formando cuatro ángulos iguales a $90^\circ$ es decir son perpendiculares, y cuatro regiones llamadas cuadrantes. Ademas la intersección de los ejes indica la posición cero; siendo la numeración hacia la derecha del eje $x$ y hacia arriba del eje $y$ positiva, ademas hacia la izquierda del eje $x$ y hacia abajo del eje $y$ negativa. En los ejes podemos ubicar a los números reales y irracionales; refiérase a la Figura \@ref(fig:2d).
+$$
+  f_k\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+  (\#eq:binom)
+$$
+
+www \@ref(eq:binom)
+
+$$
+\begin{split}
+a_3w&=b+c\int_1^3-d^3+e^5-f^3\\
+&=g+h_i\\
+& =b+c_{x\to\infty}^{n_i^3}n\int_1^3-d^3+e^5-f^3\sum_1^2x_i\delta_i\zeta_i\omega_i-\prod_1^3f_ig_i\delta_i\omega_i\\
+\end{split} 
+(\#eq:align)$$
+
+www w \@ref(eq:www)
+
+-   wwwwwwwwwww $\sum_1^3x_i$
+
+-   $www$, $\rho$ $\epsilon$ $w_1$ $\rho_1$ entonces se tiene que la relacional es
+
+    $$
+    \begin{split}
+    \rho&=\int_1^3\\
+    &=\int_1^3\\
+    &=\rho_1
+    \end{split} (\#eq:www)
+    $$
+
+Estos ejes ***evidentemente*** se *interceptan* en un punto, formando cuatro ángulos iguales a $90^\circ$ es decir son ***perpendiculares***, y cuatro regiones llamadas cuadrantes. Ademas la intersección de los ejes indica la posición cero; siendo la numeración hacia la derecha del eje $x$ y hacia arriba del eje $y$ positiva, además hacia la izquierda del eje $x$ y hacia abajo del eje $y$, negativa. En los ejes podemos ubicar a los números reales e irracionales; refiérase a la Figura \@ref(fig:2d).
 
 ```{remark}
 Existen otros términos que refieren al espacio bidimensional, por ejemplo a veces suele llamarse como plano, sistema de ejes coordenados 2d o simplemente como el espacio 2d.
@@ -41,12 +56,30 @@ Existen otros términos que refieren al espacio bidimensional, por ejemplo a vec
 El punto es un ente grafico, considerada como la mínima unidad en la representacion gráfica. Refiérase a la Figura (\@ref(fig:puntolinea))
 ```
 
-```{r puntolinea, echo=FALSE, fig.cap="El punto y la linea (magnificada)", fig.pos = "!ht", fig.align="center"}
+```{r puntolinea, echo=FALSE, results='asis', fig.cap="El punto y la linea (magnificada)", fig.pos = "!ht", fig.align="center"}
 knitr::include_graphics("puntolinea.svg")
 ```
 
+$$
+\begin{split}
+5&=wwwww\\
+&=wwwww\\
+&=www\\
+&=www
+\end{split}
+$$
+
+Entonces
+
+$$
+\begin{aligned}
+w&=\int_1^3
+\end{aligned}
+(\#eq:wwwwwww)
+$$
+
 La ubicación de un punto se realiza con la ayuda de un sistema de ejes coordenados refiérase a la Definición \@ref(def:r2) compuestas de dos ejes el eje $x$ (eje de las abscisas) y el eje $y$ (eje de las ordenadas), ademas de una etiqueta de ser necesaria, es decir el punto $W=(x,y)$ (etiquetas con letras mayúsculas), indica que esta ubicada a $x$ unidades sobre el eje $x$, del centro del sistema de ejes coordenados, a la derecha si $x$ es positivo y a la izquierda si $x$ es negativo; y $y$ unidades sobre el eje $y$, del centro del sistema de ejes coordenados, hacia arriba si $y$ es positivo y hacia abajo si $y$ es negativo.
-  
+
 ```{definition, linea, name="La linea"}
 La linea considerada como el conjunto de puntos distribuidas de manera secuencial es decir yuxtapuestas. Refiérase a la Figura (\@ref(fig:puntolinea))
 ```
@@ -105,6 +138,12 @@ Las lineas poligonales generan formas poligonales\index{poligonales} que son *li
 ```{definition, poligonal}
 Las lineas poligonales son fornas obtenidas mediante la unión consecutiva de segmentos con direcciones distintas.
 ```
+
+$\rho$ entonces $\rho$
+
+\$\$
+
+\$\$
 
 ```{r simetria, echo=FALSE, fig.cap="Simetria", fig.pos = "!ht", fig.align="center"}
 knitr::include_graphics("simetria.svg")

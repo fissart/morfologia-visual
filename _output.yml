@@ -1,8 +1,9 @@
 bookdown::gitbook:
   css: style.css
+  anchor_sections: FALSE
   config:
     fontsettings:
-      theme: white
+      theme: cerulean
       family: serif
       size: 2
     toc:
@@ -19,7 +20,8 @@ bookdown::pdf_book:
   latex_engine: pdflatex
   citation_package: natbib
   template: null
-  pandoc_args: --top-level-division=chapter
+  pandoc_args: ["--top-level-division=chapter" 
+    ]
   toc_depth: 3
   toc_unnumbered: no
   toc_appendix: yes
