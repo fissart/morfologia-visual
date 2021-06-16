@@ -63,7 +63,7 @@ knitr::include_graphics("puntolinea.svg")
 $$
 \begin{split}
 5&=wwwww\\
-&=wwwww\\
+&=wwwwwwww\\
 &=www\\
 &=www
 \end{split}
