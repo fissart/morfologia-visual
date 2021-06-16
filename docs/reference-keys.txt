@@ -88,8 +88,6 @@ rotacion
 reflexión
 homotecia
 trasformaciones-topológicas
-homeomofismo
-homomorfismo
 isomorfismo
 isometría
 formas-naturales
