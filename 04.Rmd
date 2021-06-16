@@ -19,10 +19,10 @@ $$
 ```{example}
 ```
 
-```{r Dogewwwwww, echo=FALSE, fig.align="center", fig.cap="Hola"}
+```{r Dogewwwwww, echo=FALSE, fig.align="center",out.width = "400px" fig.cap="Hola"}
 if (knitr::is_html_output()) {
 knitr::include_url("https://www.geogebra.org/classic/kqkygdbj", height="700")} else {
-knitr::include_graphics('trasformacion.png')
+knitr::include_graphics('trasformacion.png', height="5cm")
 }
 ```
 
