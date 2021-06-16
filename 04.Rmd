@@ -1,11 +1,60 @@
-# Formas organicas
+# Transformaciones de las formas
 
-## Geometrizacion
+## Transformaciones elementales
 
-## Redes
+### Traslacion
 
-## Geomorfologia
+```{definition, traslacion, name="Traslación"}
+La traslacion de un objeto, consiste en mover todos los puntos del objeto en el espacio 2D o 3D en una solo dirección, un solo sentido y a una distancia determinada.
+```
 
-## Fitomorfologia
+```{example}
+Sea figura (\@ref(fig:Doge)) la derección de $37^\circ$, el sentido indicada por la flecha y la distancia 5 unidades.
+```
 
-## Zoomorfologia
+www
+
+```{r Doge, echo=FALSE, fig.align="center", fig.cap="Hola"}
+if (knitr::is_html_output()) {
+knitr::include_url("https://www.youtube.com/embed/TTpbP5BVtiA")
+knitr::include_graphics('elipse.svg')
+  } else {
+knitr::include_graphics('elipse.pdf')
+}
+```
+
+```{example}
+www wwwwwwwwwwww wwwwwwwwwwwwwww
+```
+
+En la escala u homotescia también existen procedimientos de proporción \@ref(fig:Doge)
+
+### Rotacion
+
+```{definition, rotacion, name="Traslación"}
+La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada 
+```
+
+### Reflexión
+
+La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada
+
+### Homotescia
+
+La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada
+
+## Trasformaciones topológicas
+
+La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada
+
+### Homeomofismo
+
+La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada
+
+### Homomorfismo
+
+La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada [@xie2015]
+
+### Isomorfismo
+
+### Isometría
