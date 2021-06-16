@@ -1,24 +1,23 @@
 # Transformaciones de las formas
 
-Coloquialmente, se presenta a la topología como la geometría de la página de goma (chicle). Esto hace referencia a que, en la geometría euclídea, dos objetos serán equivalentes mientras podamos transformar uno en otro mediante isometrías (rotaciones, traslaciones, reflexiones, homotescia.), es decir, mediante transformaciones que conservan las medidas de ángulo, área, longitud, volumen y otras.
-
 Una transformación en el plano es una correspondencia uno a uno entre los puntos del plano entre sí. Si un punto P se transforma en un punto P' a este último se le conoce como la imagen y a P se le llama la preimagen.
 
 ## Transformaciones elementales
 
-### Traslacion
+### Traslación
 
 ```{definition, traslacion, name="Traslación"}
-La traslacion de un objeto, consiste en mover todos los puntos del objeto en el espacio 2D o 3D en una solo dirección, un solo sentido y a una distancia determinada.
+La traslacion de un objeto, consiste en mover todos los puntos del objeto en el espacio 2D o 3D en una solo dirección, un solo sentido y a una distancia determinada. Hay congruencia y semejanza
 ```
 
-En geometría, una **traslación** es una isometría en el espacio euclídeo caracterizada por un vector, tal que, a cada punto *P* de un objeto o figura se le hace corresponder otro punto *P'* , tal que: [{\\displaystyle {\\begin{cases}T\_{\\vec {u}}:\\mathbb {R} \^{n}\\to \\mathbb {R} \^{n}&{\\overrightarrow {PP'}}={\\vec {u}}\\\\P\\mapsto P'=T(P)=P+{\\vec {u}}\\end{cases}}}]
+En geometría, una **traslación** es una isometría en el espacio euclídeo caracterizada por un vector, tal que, a cada punto $P$ de un objeto o figura se le hace corresponder otro punto $P'$, tal que:
+
+$$
+\begin{cases}T_{\vec {u}}:\mathbb {R} ^{n}\to \mathbb {R} ^{n}&{\overrightarrow {PP'}}={\vec {u}}\\P\mapsto P'=T(P)=P+{\vec {u}}\end{cases}
+$$
 
 ```{example}
-Sea figura (\@ref(fig:Doge)) la derección de $37^\circ$, el sentido indicada por la flecha y la distancia 5 unidades.
 ```
-
-www
 
 ```{r Dogewwwwww, echo=FALSE, fig.align="center", fig.cap="Hola"}
 if (knitr::is_html_output()) {
@@ -27,16 +26,12 @@ knitr::include_graphics('elipse.svg')
 }
 ```
 
-```{example}
-www wwwwwwwwwwww wwwwwwwwwwwwwww
-```
-
-En la escala u homotescia también existen procedimientos de proporción \@ref(fig:Doge)
+En la escala u homotecia también existen procedimientos de proporción.
 
 ### Rotacion
 
 ```{definition, rotacion, name="Traslación"}
-La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada 
+La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada. Congruencia y semejanza
 ```
 
 **Rotación** es el movimiento de cambio de orientación de un cuerpo o un sistema de referencia de forma que una línea (llamada *eje de rotación*) o un punto permanece fijo.
@@ -56,11 +51,17 @@ La mediatriz de un segmento es la recta perpendicular al segmento y que pasa por
 
 Un segmento cuyos extremos sean los puntos $A$ y $B$ lo representamos como $\overline{AB}$ y a su longitud como $AB$. A la recta que contiene los puntos $A$ y $B$ la representamos como $\overleftrightarrow{AB}$ .
 
+Semejanza y congruencia
+
 ### Homotecia
 
 La homotecia es la deformación de una figura, que se hace más grande o más pequeña, todo en base a un punto el cual se toma como una referencia conocido como: *centro de la homotecia*.
 
+Semejanza
+
 ## Trasformaciones topológicas
+
+Coloquialmente, se presenta a la topología como la geometría de la página de goma (chicle). Esto hace referencia a que, en la geometría euclídea, dos objetos serán equivalentes mientras podamos transformar uno en otro mediante isometrías (rotaciones, traslaciones, reflexiones, homotescia.), es decir, mediante transformaciones que conservan las medidas de ángulo, área, longitud, volumen y otras.
 
 ```{definition, topologia, name="Topología"}
 

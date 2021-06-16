@@ -31,7 +31,6 @@ def:unnamed-chunk-2
 def:traslacion
 exm:unnamed-chunk-3
 fig:Dogewwwwww
-exm:unnamed-chunk-4
 def:rotacion
 def:topologia
 tab:nice-tab
@@ -84,7 +83,7 @@ simetría-esferica
 simetría-planar
 transformaciones-de-las-formas
 transformaciones-elementales
-traslacion
+traslación
 rotacion
 reflexión
 homotecia
