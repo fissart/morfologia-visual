@@ -1,6 +1,6 @@
 # Transformaciones de las formas
 
-Una transformación en el plano es una correspondencia uno a uno entre los puntos del plano entre sí. Si un punto $P$ se transforma en un punto P' a este último se le conoce como la imagen y a P se le llama la preimagen.
+Una transformación en el plano es una correspondencia uno a uno entre los puntos del plano entre sí. Si un punto $P$ se transforma en un punto $P'$ a este último se le conoce como la imagen y a $P$ se le llama la preimagen.
 
 ## Transformaciones elementales
 
@@ -22,7 +22,7 @@ $$
 ```{r Dogewwwwww, echo=FALSE, fig.align="center", fig.cap="Hola"}
 if (knitr::is_html_output()) {
 knitr::include_url("https://www.geogebra.org/classic/kqkygdbj", height="700")} else {
-knitr::include_graphics('elipse.svg')
+knitr::include_graphics('trasformacion.png')
 }
 ```
 
@@ -31,10 +31,8 @@ En la escala u homotecia también existen procedimientos de proporción.
 ### Rotacion
 
 ```{definition, rotacion, name="Traslación"}
-La traslacion es el proceso de mover todos los puntos de un objeto en el espacio 2D o 3D en una solo dirección y sentido a una distancia determinada. Congruencia y semejanza
+Rotación es el movimiento de cambio de orientación de un cuerpo o un sistema de referencia de forma que una línea (llamada eje de rotación) o un punto permanece fijo.
 ```
-
-**Rotación** es el movimiento de cambio de orientación de un cuerpo o un sistema de referencia de forma que una línea (llamada *eje de rotación*) o un punto permanece fijo.
 
 ### Reflexión
 
