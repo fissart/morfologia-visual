@@ -29,7 +29,10 @@ exm:unnamed-chunk-3
 fig:Dogewwwwww
 def:rotacion
 def:topologia
-tab:nice-tab
+def:formasnaturales
+fig:geometrizacion
+def:w2
+def:w3
 def:transformacion
 formas-bidimesionales
 el-punto-y-la-linea
@@ -87,12 +90,11 @@ trasformaciones-topológicas
 isomorfismo
 isometría
 formas-naturales
-geometrizacion
-redes
+geometrización
 geomorfologia
 fitomorfologia
 zoomorfologia
-formas-matematicas
+formas-abstractas
 funciones
 ejercicios
 trasformaciones

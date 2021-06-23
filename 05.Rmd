@@ -1,11 +1,43 @@
 # Formas naturales
 
-## Geometrizacion
+Son formas que están presentes en la naturaleza tales como nubes arboles, animales, cosas en general.
 
-## Redes
+```{definition, formasnaturales, name="Formas naturales"}
+Son objetos presentes en la naturaleza manisfestandose como elementos que interactuan en nuestro entorno.
+```
+
+## Geometrización
+
+La geometrización es el proceso de manifestar poligonos y lineas sobre los objetos naturales 2d y 3d. Este proceso es la simplificación del objeto con el objetivo de poder aplicar criterios de proporcionalidad y otras trasformaciones elementales que puedan realizarse sobre el objeto. La simplificación podría incluso ser una linea o una estructura poligonal compleja. La poligonización se realiza desde un punto de vista especifico en el caso bidimensional y toda la forma en el caso tridimensional.
+
+El objetivo es aprender a geometrizar diversos objetos 3d con el objetivo de trasformarlos.
+
+```{r geometrizacion, echo=FALSE, fig.cap="Elipse", fig.pos ="!ht", fig.align="center"}
+knitr::include_graphics("geometrizacion.jpg")
+```
 
 ## Geomorfologia
 
+```{definition, w2, name="Formas naturales"}
+Son objetos presentes en la naturaleza manisfestandose como elementos que interactuan en nuestro entorno
+```
+
+Formas terrestres la tierra y la forma esférica; corrosión textura volumen la pirámide, llanura, lomada pendiente, distancia.
+
+wwwwwwwwwwwwwwwwww
+
 ## Fitomorfologia
 
+```{definition, w3, name="Formas naturales"}
+Son objetos presentes en la naturaleza manisfestandose como elementos que interactuan en nuestro entorno
+```
+
+Formas arboles arbustos hiervas crecimiento inclinaciones partes de un árbol
+
+wwwwwwwwwwwwwwwwwwwwwww
+
 ## Zoomorfologia
+
+Animales estructura muscular y osea locomocion
+
+wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
