@@ -18,34 +18,67 @@ knitr::include_graphics("images.png")
 knitr::include_graphics("pol1.jpg")
 knitr::include_graphics("pol2.jpeg")
 ```
-![alt](geometrizacion.jpg)
-![alt](images.png)
-![alt](pol1.jpg)
-![alt](pol2.jpeg)
+![www](geometrizacion.jpg)
+![www](images.png)
+![www](pol1.jpg)
+![www](pol2.jpeg)
 
 
 ## Geomorfologia
 
-```{definition, w2, name="Formas naturales"}
-Son objetos presentes en la naturaleza manisfestandose como elementos que interactuan en nuestro entorno
+```{definition, www2, name="Geomorfología"}
+La geomorfología es una rama de la geografía1​ y de la geología2​ que tiene como objetivo el estudio de las formas de la superficie terrestre enfocado en describir, entender su génesis y su actual comportamiento.
 ```
+La geomorfología es una rama de la geografía y de la geología​ que tiene como objetivo el estudio de las formas de la superficie terrestre enfocado en describir, entender su génesis y su actual comportamiento.
+### Factores generadores de los procesos geomorfológicos
 
-Formas terrestres la tierra y la forma esférica; corrosión textura volumen la pirámide, llanura, lomada pendiente, distancia.
 
-wwwwwwwwwwwwwwwwww
+- **Factores geográficos:** Factores *bióticos* como *abióticos*, son propiamente geográficos aquellos *abióticos* de origen exógeno, tales como la *gravedad*, el suelo, el clima y los cuerpos de agua. El clima con sus elementos tales como la *presión*, la *temperatura*, la *humedad*, los vientos. El *agua superficial*. Son factores que ayudan al modelado, favoreciendo los procesos erosivos.
+- **Factores bióticos**
+- **Factores geológicos:** Tales como la tectónica, el diastrofismo, la orogénesis y el vulcanismo, son procesos constructivos y de origen endógeno que se oponen al modelado e interrumpen el ciclo geográfico
+- **Factores antrópicos**
+
+
+
+
+
+### Ramas de la geomorfología
+
+* **Geomorfología climática**: Estudia la influencia del clima en el desarrollo del relieve. La presión atmosférica y la temperatura interactúan con el clima y son los responsables de los vientos, las escorrentías y del continuo modelado del ciclo geográfico. La diversidad de climas representa distintas de velocidades en la evolución del ciclo, como es el caso de los climas áridos con ritmo evolutivo más lentos y de los climas muy húmedos con ritmos evolutivos más altos, como también el clima representa el tipo de modelado predominante; glacial, eólico, fluvial, etc. Este conocimiento se sintetiza en lo que se denomina «dominios morfoclimáticos.
+
+* **Geomorfología fluvial**: Estudio de formas y relieves ocasionados por la dinámica fluvial. ~ hidrografía.
+
+* **Geomorfología de laderas**: Estudia los fenómenos producidos en las vertientes de las montañas, movimientos en masa, estabilización de taludes, etc.  riesgos naturales.
+
+* **Geomorfología eólica**: Estudiar los procesos y las formas de origen eólico, en las zonas litorales, los desiertos fríos y cálidos, y las zonas polares.
+
+* **Geomorfología glaciar**: se encarga de estudiar las formaciones y los procesos de los accidentes geográficos, formas y relieves glaciares y periglaciares. Esta rama está íntimamente ligada con la glaciología.
+
+* **Geomorfología estructural**: Prioriza la influencia de estructuras geológicas en el desarrollo del relieve. Esta disciplina es muy relevante en zonas de marcada actividad geológica donde por ejemplo fallas y plegamientos predeterminan la existencia de cumbres o quebradas, o la existencia de bahías y cabos se explica por la erosión diferencial de afloramientos de roca más o menos resistentes.  geología
+
+* **Geomorfología litoral**: estudia las formas del relieve propias de las zonas costeras.
+
+![alt](geomorfo.jpeg)
+
+[Geomorfologia 1](https://sketchfab.com/3d-models/eldgos-i-geldingadolum-a-reykjanesskaga-7bcb3d856e1947a4a78c1810f559b3ea)
+
+<div class="sketchfab-embed-wrapper"> <iframe title="Teufelstisch, Hinterweidental, Germany" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/1d054ee6058b4f738e817d46480b1949/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/teufelstisch-hinterweidental-germany-1d054ee6058b4f738e817d46480b1949?utm_medium=embed&utm_campaign=share-popup&utm_content=1d054ee6058b4f738e817d46480b1949" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Teufelstisch, Hinterweidental, Germany </a> by <a href="https://sketchfab.com/outcropwizard?utm_medium=embed&utm_campaign=share-popup&utm_content=1d054ee6058b4f738e817d46480b1949" target="_blank" style="font-weight: bold; color: #1CAAD9;"> outcropwizard </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=1d054ee6058b4f738e817d46480b1949" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
 
 ## Fitomorfologia
 
-```{definition, w3, name="Formas naturales"}
+```{definition, ww3, name="Formas naturales"}
 Son objetos presentes en la naturaleza manisfestandose como elementos que interactuan en nuestro entorno
+```
+Son objetos presentes en la naturaleza manisfestandose como elementos que interactuan en nuestro entorno $$ \int_{1}^{3}w_1 $$
+
+```{definition, w3w, name="Formas naturales"}
+Son objetos presentes en la naturaleza manisfestandose como elementos que interactuan en nuestro entorno www
 ```
 
 Formas arboles arbustos hiervas crecimiento inclinaciones partes de un árbol
 
-wwwwwwwwwwwwwwwwwwwwwww
 
 ## Zoomorfologia
 
-Animales estructura muscular y osea locomocion $\epsilon $ 
+Animales estructura muscular y osea  locomoción
 
-wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
