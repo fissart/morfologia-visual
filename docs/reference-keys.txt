@@ -30,7 +30,10 @@ fig:Dogewwwwww
 def:rotacion
 def:topologia
 def:formasnaturales
-fig:geometrizacion
+fig:geometrizacion-1
+fig:geometrizacion-2
+fig:geometrizacion-3
+fig:geometrizacion-4
 def:w2
 def:w3
 def:transformacion
@@ -110,7 +113,3 @@ metodos-matematicos-1
 metodos-tecnicos-1
 método-de-las-secciones
 método-de-la-plomada-1
-fig:geometrizacion-1
-fig:geometrizacion-2
-fig:geometrizacion-3
-fig:geometrizacion-4
