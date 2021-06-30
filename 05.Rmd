@@ -18,6 +18,11 @@ knitr::include_graphics("images.png")
 knitr::include_graphics("pol1.jpg")
 knitr::include_graphics("pol2.jpeg")
 ```
+![alt](geometrizacion.jpg)
+![alt](images.png)
+![alt](pol1.jpg)
+![alt](pol2.jpeg)
+
 
 ## Geomorfologia
 
@@ -41,6 +46,6 @@ wwwwwwwwwwwwwwwwwwwwwww
 
 ## Zoomorfologia
 
-Animales estructura muscular y osea locomocion
+Animales estructura muscular y osea locomocion $\epsilon $ 
 
 wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
