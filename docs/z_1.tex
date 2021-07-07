@@ -44,15 +44,6 @@
 \usepackage{longtable,booktabs}
 % Fix footnotes in tables (requires footnote package)
 \IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
-\usepackage{graphicx,grffile}
-\makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-\makeatother
-% Scale images if necessary, so that they will not overflow the page
-% margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
-\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -767,12 +758,6 @@ La geomorfología es una rama de la geografía y de la geología que tiene como 
 }
 
 \caption{WWWWWWWWW}\label{fig:wwUUU}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics{geomorfo.jpeg}
-\caption{alt}
 \end{figure}
 
 \href{https://sketchfab.com/3d-models/eldgos-i-geldingadolum-a-reykjanesskaga-7bcb3d856e1947a4a78c1810f559b3ea}{Geomorfologia 1}
