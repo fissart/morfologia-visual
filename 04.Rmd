@@ -71,7 +71,7 @@ En topología, dos objetos son equivalentes en un sentido mucho más amplio. Han
 
 ### Isomorfismo
 
-En matemáticas, un **isomorfismo** (del griego iso-morfos: Igual forma) es un homomorfismo (o más generalmente un morfismo) que admite un inverso. ​ El concepto matemático de **isomorfismo** pretende captar la idea de tener la misma estructura.
+En matemáticas, un **isomorfismo** (del griego iso-morfos: Igual forma) es un homomorfismo (o más generalmente un morfismo) que admite un inverso. El concepto matemático de **isomorfismo** pretende captar la idea de tener la misma estructura.
 
 ### Isometría
 
