@@ -484,9 +484,9 @@ La geomorfología es una rama de la geografía y de la geología​ que tiene co
 ## Fitomorfologia
 
 ```{definition, ww3, name="Formas naturales"}
-La Morfología vegetal, en sentido amplio, se define como el estudio de la estructura y forma de las plantas, e incluye la Citología y la Histología. La primera se ocupa del estudio fino de la constitución de la célula y la segunda del estudio de los tejidos. Citología e Histología, conjuntamente, son necesarias para comprender la anatomía vegetal, o sea, su constitución interna y, además, son un complemento de la organografía, exomorfología o morfología en sentido estricto, que trata de la forma externa de las plantas
+La Fitomorfologia, en sentido amplio, se define como el estudio de la estructura y forma de las plantas, e incluye la Citología y la Histología. La primera se ocupa del estudio fino de la constitución de la célula y la segunda del estudio de los tejidos. Citología e Histología, conjuntamente, son necesarias para comprender la anatomía vegetal, o sea, su constitución interna y, además, son un complemento de la organografía, exomorfología o morfología en sentido estricto, que trata de la forma externa de las plantas
 ```
-La Morfología vegetal, en sentido amplio, se define como el estudio de la **estructura** y forma de las plantas, e incluye la Citología y la Histología. La primera se ocupa del estudio fino de la constitución de la célula y la segunda del estudio de los tejidos. Citología e Histología, conjuntamente, son necesarias para comprender la anatomía vegetal, o sea, su constitución interna y, además, son un complemento de la organografía, **exomorfología** o morfología en sentido estricto, que trata de la forma externa de las plantas
+La Morfología vegetal, en sentido amplio, se define como el estudio de la **estructura** y forma de las plantas, e incluye la Citología y la Histología. La primera se ocupa del estudio fino de la constitución de la célula y la segunda del estudio de los tejidos. Citología e Histología, conjuntamente, son necesarias para comprender la anatomía vegetal, o sea, su constitución interna y, además, son un complemento de la organografía, **exomorfología**	 o morfología en sentido estricto, que trata de la forma externa de las plantas
 
 ### Metodos
 Las plantas nos ofrecen una infinidad de formas particulares y el objetivo de la morfología es descubrir los patrones o regularidades generales en el fondo de tal diversidad, asimismo comprender y describir tal diversidad desde varios puntos de vista. Para alcanzar este fin se pueden seguir dos caminos:
@@ -502,6 +502,8 @@ El cuerpo de las plantas vasculares está marcadamente polarizado y formado por 
 Es difícil hacer una distinción entre tallo y hojas, ambos órganos tienen origen común en el meristema apical caulinar, y están relacionados con estrecha dependencia a lo largo de todo su período de crecimiento. Por eso tallo y hojas se consideran como una unidad que constituye el vástago.
 
 En las espermatófitas la diferenciación entre raíz y vástago aparece ya en el embrión joven. Las partes del embrión son radícula, hipocótilo, cotiledones y plúmula. En algunos casos se distingue también el primer entrenudo, entre el nudo cotiledonar y la plúmula: el epicótilo. Durante la germinación el embrión crece, la radícula formará la raíz primaria y la plúmula formará el vástago.
+
+
 ## Zoomorfologia
 
 Animales estructura muscular y osea  locomoción
