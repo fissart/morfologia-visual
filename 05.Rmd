@@ -65,7 +65,7 @@ knitr::include_graphics("geomorfo.jpeg")
 ```
 
 
-![alt](geomorfo.jpeg)
+<!-- ![alt](geomorfo.jpeg) -->
 
 [Geomorfologia 1](https://sketchfab.com/3d-models/eldgos-i-geldingadolum-a-reykjanesskaga-7bcb3d856e1947a4a78c1810f559b3ea)
 
