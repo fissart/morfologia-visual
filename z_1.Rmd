@@ -476,7 +476,7 @@ La geomorfología es una rama de la geografía y de la geología​ que tiene co
 
 [Geomorfologia 1](https://sketchfab.com/3d-models/eldgos-i-geldingadolum-a-reykjanesskaga-7bcb3d856e1947a4a78c1810f559b3ea)
 
-<div class="sketchfab-embed-wrapper"> <iframe title="Teufelstisch, Hinterweidental, Germany" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/1d054ee6058b4f738e817d46480b1949/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/teufelstisch-hinterweidental-germany-1d054ee6058b4f738e817d46480b1949?utm_medium=embed&utm_campaign=share-popup&utm_content=1d054ee6058b4f738e817d46480b1949" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Teufelstisch, Hinterweidental, Germany </a> by <a href="https://sketchfab.com/outcropwizard?utm_medium=embed&utm_campaign=share-popup&utm_content=1d054ee6058b4f738e817d46480b1949" target="_blank" style="font-weight: bold; color: #1CAAD9;"> outcropwizard </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=1d054ee6058b4f738e817d46480b1949" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
+<div class="sketchfab-embed-wrapper"> <iframe title="Teufelstisch, Hinterweidental, Germany" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/1d054ee6058b4fvvvvv738e817d46480b1949/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/teufelstisch-hinterweidental-germany-1d054ee6058b4f738e817d46480b1949?utm_medium=embed&utm_campaign=share-popup&utm_content=1d054ee6058b4f738e817d46480b1949" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Teufelstisch, Hinterweidental, Germany </a> by <a href="https://sketchfab.com/outcropwizard?utm_medium=embed&utm_campaign=share-popup&utm_content=1d054ee6058b4f738e817d46480b1949" target="_blank" style="font-weight: bold; color: #1CAAD9;"> outcropwizard </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=1d054ee6058b4f738e817d46480b1949" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
 
 
 <div class="sketchfab-embed-wrapper"> <iframe title="Wariewood Outfall 12/01/2017" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/6836256ac39d4821b40b3414f9a7715e/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/wariewood-outfall-12012017-6836256ac39d4821b40b3414f9a7715e?utm_medium=embed&utm_campaign=share-popup&utm_content=6836256ac39d4821b40b3414f9a7715e" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Wariewood Outfall 12/01/2017 </a> by <a href="https://sketchfab.com/chrisdrummond?utm_medium=embed&utm_campaign=share-popup&utm_content=6836256ac39d4821b40b3414f9a7715e" target="_blank" style="font-weight: bold; color: #1CAAD9;"> chrisdrummond </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=6836256ac39d4821b40b3414f9a7715e" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
@@ -484,17 +484,24 @@ La geomorfología es una rama de la geografía y de la geología​ que tiene co
 ## Fitomorfologia
 
 ```{definition, ww3, name="Formas naturales"}
-Son objetos presentes en la naturaleza manisfestandose como elementos que interactuan en nuestro entorno
+La Morfología vegetal, en sentido amplio, se define como el estudio de la estructura y forma de las plantas, e incluye la Citología y la Histología. La primera se ocupa del estudio fino de la constitución de la célula y la segunda del estudio de los tejidos. Citología e Histología, conjuntamente, son necesarias para comprender la anatomía vegetal, o sea, su constitución interna y, además, son un complemento de la organografía, exomorfología o morfología en sentido estricto, que trata de la forma externa de las plantas
 ```
-Son objetos presentes en la naturaleza manisfestandose como elementos que interactuan en nuestro entorno $$ \int_{1}^{3}w_1 $$
+La Morfología vegetal, en sentido amplio, se define como el estudio de la **estructura** y forma de las plantas, e incluye la Citología y la Histología. La primera se ocupa del estudio fino de la constitución de la célula y la segunda del estudio de los tejidos. Citología e Histología, conjuntamente, son necesarias para comprender la anatomía vegetal, o sea, su constitución interna y, además, son un complemento de la organografía, **exomorfología** o morfología en sentido estricto, que trata de la forma externa de las plantas
 
-```{definition, w3w, name="Formas naturales"}
-Son objetos presentes en la naturaleza manisfestandose como elementos que interactuan en nuestro entorno www
-```
+### Metodos
+Las plantas nos ofrecen una infinidad de formas particulares y el objetivo de la morfología es descubrir los patrones o regularidades generales en el fondo de tal diversidad, asimismo comprender y describir tal diversidad desde varios puntos de vista. Para alcanzar este fin se pueden seguir dos caminos:
 
-Formas arboles arbustos hiervas crecimiento inclinaciones partes de un árbol
+* Secuencias
 
+* Morfogenesis
 
+### Organización del cuerpo de la planta
+
+El cuerpo de las plantas vasculares está marcadamente polarizado y formado por dos porciones básicas: un vástago orientado hacia la luz, que vive en ambiente aéreo, compuesto por tallo y hojas, y una raíz, órgano de fijación y absorción que vive en el suelo. Este tipo de cuerpo vegetativo se llama cormo y se presenta en las pteridófitas y en las espermatófitas, que por eso se llaman también cormófitos.
+
+Es difícil hacer una distinción entre tallo y hojas, ambos órganos tienen origen común en el meristema apical caulinar, y están relacionados con estrecha dependencia a lo largo de todo su período de crecimiento. Por eso tallo y hojas se consideran como una unidad que constituye el vástago.
+
+En las espermatófitas la diferenciación entre raíz y vástago aparece ya en el embrión joven. Las partes del embrión son radícula, hipocótilo, cotiledones y plúmula. En algunos casos se distingue también el primer entrenudo, entre el nudo cotiledonar y la plúmula: el epicótilo. Durante la germinación el embrión crece, la radícula formará la raíz primaria y la plúmula formará el vástago.
 ## Zoomorfologia
 
 Animales estructura muscular y osea  locomoción
