@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.12)  16 JUL 2021 15:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.12)  16 JUL 2021 15:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1706,23 +1706,23 @@ LaTeX Info: Redefining \% on input line 772.
 LaTeX Info: Redefining \. on input line 797.
 LaTeX Info: Redefining \% on input line 797.
 [19]
-LaTeX Info: Redefining \. on input line 810.
-LaTeX Info: Redefining \% on input line 810.
+LaTeX Info: Redefining \. on input line 818.
+LaTeX Info: Redefining \% on input line 818.
 [20]
-LaTeX Info: Redefining \. on input line 810.
-LaTeX Info: Redefining \% on input line 810.
+LaTeX Info: Redefining \. on input line 818.
+LaTeX Info: Redefining \% on input line 818.
 [21 <./geometrizacion.jpg>]
-LaTeX Info: Redefining \. on input line 810.
-LaTeX Info: Redefining \% on input line 810.
+LaTeX Info: Redefining \. on input line 818.
+LaTeX Info: Redefining \% on input line 818.
 [22 <./images.png>]
-LaTeX Info: Redefining \. on input line 810.
-LaTeX Info: Redefining \% on input line 810.
+LaTeX Info: Redefining \. on input line 818.
+LaTeX Info: Redefining \% on input line 818.
 [23 <./pol1.jpg>]
-LaTeX Info: Redefining \. on input line 810.
-LaTeX Info: Redefining \% on input line 810.
+LaTeX Info: Redefining \. on input line 818.
+LaTeX Info: Redefining \% on input line 818.
 [24 <./pol2.jpeg>]
-LaTeX Info: Redefining \. on input line 810.
-LaTeX Info: Redefining \% on input line 810.
+LaTeX Info: Redefining \. on input line 818.
+LaTeX Info: Redefining \% on input line 818.
 [25 <./geomorfo.jpeg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1763,38 +1763,38 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [26
 
 ]
-Underfull \vbox (badness 10000) detected at line 810
+Underfull \vbox (badness 10000) detected at line 818
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 810
+Overfull \hbox (336.25pt too wide) detected at line 818
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 810
+Underfull \vbox (badness 10000) detected at line 818
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 810
+Overfull \hbox (336.25pt too wide) detected at line 818
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 810
+Underfull \vbox (badness 10000) detected at line 818
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 810
+Overfull \hbox (336.25pt too wide) detected at line 818
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 810
+Underfull \vbox (badness 10000) detected at line 818
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 810
+Overfull \hbox (336.25pt too wide) detected at line 818
 []
  []
 
@@ -1846,38 +1846,38 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [28
 
 ]
-Underfull \vbox (badness 10000) detected at line 829
+Underfull \vbox (badness 10000) detected at line 837
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 829
+Overfull \hbox (336.25pt too wide) detected at line 837
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 829
+Underfull \vbox (badness 10000) detected at line 837
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 829
+Overfull \hbox (336.25pt too wide) detected at line 837
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 829
+Underfull \vbox (badness 10000) detected at line 837
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 829
+Overfull \hbox (336.25pt too wide) detected at line 837
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 829
+Underfull \vbox (badness 10000) detected at line 837
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 829
+Overfull \hbox (336.25pt too wide) detected at line 837
 []
  []
 
@@ -1929,38 +1929,38 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [30
 
 ]
-Underfull \vbox (badness 10000) detected at line 843
+Underfull \vbox (badness 10000) detected at line 851
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 843
+Overfull \hbox (336.25pt too wide) detected at line 851
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 843
+Underfull \vbox (badness 10000) detected at line 851
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 843
+Overfull \hbox (336.25pt too wide) detected at line 851
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 843
+Underfull \vbox (badness 10000) detected at line 851
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 843
+Overfull \hbox (336.25pt too wide) detected at line 851
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 843
+Underfull \vbox (badness 10000) detected at line 851
  []
 
 
-Overfull \hbox (336.25pt too wide) detected at line 843
+Overfull \hbox (336.25pt too wide) detected at line 851
 []
  []
 
@@ -2116,14 +2116,14 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 879.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 879.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 887.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 887.
 (./z_1.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 879.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 879.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 887.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 887.
 Package rerunfilecheck Info: File `z_1.out' has not changed.
 (rerunfilecheck)             Checksum: 3DEF160EA79076AC623094E3D3210469;11877.
  ) 
@@ -2149,7 +2149,7 @@ s/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on z_1.pdf (49 pages, 870912 bytes).
+Output written on z_1.pdf (49 pages, 871180 bytes).
 PDF statistics:
  977 PDF objects out of 1000 (max. 8388607)
  890 compressed objects within 9 object streams
